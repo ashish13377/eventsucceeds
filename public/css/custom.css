@@ -1,0 +1,86 @@
+@font-face {
+    font-family:  Water_Brush ;
+    src: url(/fonts/Water_Brush/WaterBrush-Regular.ttf);
+}
+@font-face {
+    font-family:  Staatliches ;
+    src: url(/fonts/Staatliches/Staatliches-Regular.ttf);
+}
+@font-face {
+    font-family:  Yesteryear ;
+    src: url(/fonts/Yesteryear/Yesteryear-Regular.ttf);
+}
+@font-face {
+    font-family: Gill-Shadow;
+    src: url(/fonts/gill_sans_mt_shadow/GILSHAD.ttf);
+}
+@font-face {
+    font-family: Plus_Jakarta_Sans;
+    src: url(/fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Bunya;
+    src: url(/fonts/bunya/Bunya-Regular_PERSONAL.ttf);
+}
+@font-face {
+    font-family: Lobster;
+    src: url(/fonts/Lobster/Lobster-Regular.ttf);
+}
+.scrolled {
+    background-color: #E60965 !important;
+    transition: background-color 200ms linear;
+    color: #000000;
+  }
+  .scroll-black{
+    color: white!important;
+  }
+.Lobster{
+    font-family: Lobster;
+}  
+.Bunya{
+    font-family: Bunya;
+} 
+.Yesteryear{
+    font-family: Yesteryear;
+}
+.Staatliches{
+    font-family: Staatliches;
+}
+.Water_Brush{
+    font-family: Water_brush;
+}
+.Gill-Shadow{
+    font-family: Gill-Shadow;
+}
+.Plus_Jakarta_Sans{
+    font-family: Plus_Jakarta_Sans;
+}
+.pink-gradient{
+    background: rgb(226,137,90);
+background: linear-gradient(90deg, rgba(226,137,90,1) 0%, rgba(219,163,204,1) 51%, rgba(105,190,208,1) 100%);
+}
+.dark{
+    filter: brightness(60%);
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    height: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(199, 199, 199);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(129, 127, 127);
+  }

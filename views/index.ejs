@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index-gallery.css">
+    <link rel="stylesheet" href="css/custom.css">
+  </head>
+  <body class="m-0 w-screen box-border">
+   
+    <!--NAVBAR-->
+    <div
+      id="navigation"
+      class="fixed top-0 left-0 w-full h-fit z-50 box-border "
+    >
+      <div class="inline-flex justify-between md:justify-between w-full">
+        <div class="flex pt-2">
+          <a href="/">
+          <div class="w-16 h-12 m-2">
+            <img
+              src=" images/ES LOGO.png"
+              class="rounded-full object-cover h-full w-full"
+              alt=""
+            />
+          </div>
+        </a>
+        <a href="/">
+          <div class="p-2 tracking-[5px] font-bold md:mr-[40] h-14 my-auto">
+            <h1 class="Staatliches  text-xl md:text-2xl lg:text-4xl pt-[5px] text-white">EVENT SUCCEED</h1>
+          </div>
+        </a>
+        </div>
+        <div id="toggle" class="p-2 flex flex-col  text-white justify-center md:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-7 w-7"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+        <div
+          id="navbar"
+          class="invisible w-[60vw] fixed top-0 left-0 drop-shadow-2xl h-screen bg-[#E60965] z-50"
+        >
+          <div
+            class="w-full pt-4 box-border inline-flex flex-col justify-start p-4 h-fit"
+          >
+            <a href="/"><div><img src="images/name.png" alt="" /></div></a>
+            <a href="/">
+            <div
+              id="event"class="nav-link py-2 border-b-[2px] hover:bg-gray-400 text-white rounded-md border-gray-300 pl-6 text-2xl"
+            >
+              Home
+            </div>
+          </a>
+          <a href="">
+            <div
+              id="vendor"class="nav-link py-2 border-b-[2px] hover:bg-gray-400 text-white rounded-md border-gray-300 pl-6 text-2xl"
+            >
+              Vendor
+            </div>
+          </a>
+          <a href="#testimonial">
+            <div
+              class="nav-link py-2 border-b-[2px] hover:bg-gray-400 text-white rounded-md border-gray-300 pl-6 text-2xl"
+            >
+              Review
+            </div>
+          </a>
+          <a href="/coming-soon">
+            <div
+              class="nav-link py-2 border-b-[2px] hover:bg-gray-400 text-white rounded-md border-gray-300 pl-6 text-2xl"
+            >
+              Blogs
+            </div>
+          </a>
+          <!-- <a href="/coming-soon">
+            <div
+              class="nav-link py-2 border-b-[2px] hover:bg-gray-400 text-white rounded-md border-gray-300 pl-6 text-2xl"
+            >
+              Shop
+            </div>
+          </a> -->
+          <a href="tel:+91-760-580-2236">
+            <div
+              class="nav-link py-2 border-b-[2px] bg-white hover:bg-gray-400 text-white rounded-md border-gray-300 pl-6 text-2xl"
+            >Contact Us
+            </div>
+          </a>
+          </div>
+        </div>
+        <div
+          class="invisible absolute right-[-100%] md:visible flex md:relative md:right-0 h-fit my-auto align-middle md:-left-2"
+        >
+        <a href="/">
+          <div
+            class=" nav-item h-full min-w-fit text-lg text-white hover:bg-red-200 rounded-md cursor-pointer  font-bold px-4 py-1 box-border md:text-lg md:px-2 lg:px-4 lg:text-xl"
+          >
+            Home
+          </div>
+        </a>
+        <a href="">
+          <div
+            class=" nav-item h-full min-w-fit text-lg text-white hover:bg-red-200 rounded-md cursor-pointer  font-bold px-4 py-1 box-border md:text-lg md:px-2 lg:px-4 lg:text-xl"
+          >
+            Vendors
+          </div>
+        </a>
+        <a href="#testimonial">
+          <div
+            class=" nav-item h-full min-w-fit text-lg text-white hover:bg-red-200 rounded-md cursor-pointer  font-bold px-4 py-1 box-border md:text-lg md:px-2 lg:px-4 lg:text-xl"
+          >
+            Reviews
+          </div>
+        </a>
+        <a href="/coming-soon">
+          <div
+            class=" nav-item h-full min-w-fit text-lg text-white hover:bg-red-200 rounded-md cursor-pointer  font-bold px-4 py-1 box-border md:text-lg md:px-2 lg:px-4 lg:text-xl"
+          >
+            Blogs
+          </div>
+        </a>
+        <!-- <a href="/coming-soon">
+          <div
+            class=" nav-item h-full min-w-fit text-lg text-white hover:bg-red-200 rounded-md cursor-pointer  font-bold px-4 py-1 box-border md:text-xl md:px-4"
+          >Shop</div>
+        </a> -->
+        <a href="tel:+91-760-580-2236">
+          <div
+            class="text-black-important nav-item h-full min-w-fit text-lg text-white  hover:bg-red-200 rounded-md cursor-pointer  font-bold px-4 py-1 box-border md:text-lg md:px-2 lg:px-4 lg:text-xl"
+          >Contact Us</div>
+        </a>
+        </div>
+      </div>
+    </div>
+    <!--BANNER-->
+    <div id="banner" class=" mb-10 w-screen mx-auto h-screen box-border">
+      <img
+        src="images/fire.jpg"
+        class="dark w-full h-full box-border -z-10 object-cover lg:object-cover"
+        alt=""
+      />
+      <div
+        id="banner-wrap"
+        class="w-full h-full z-10 relative -top-full px-4 md:px-[15%] flex-col justify-center inline-flex"
+      >
+        <div class="w-fit mx-auto relative text-center shadow-4xl text-4xl lg:text-8xl text-white Lobster font-extrabold -bottom-16">
+         Event Succeed
+        </div>
+        <div
+          class="text-white text-sm Plus_Jakarta_Sans relative  -bottom-16 text-center lg:text-2xl font-semibold"
+        >
+          Where every Event is unique and traditional.
+        </div>
+        <div
+        id="vendor-toggle" class="cursor-pointer w-full h-[5rem] inline-flex bg-slate-100  rounded-md relative p-2 -bottom-24"
+        >
+          <div class="h-full inline-flex  justify-between w-5/6 ">
+            <span class="p-4 text-left text-sm lg:text-2xl text-gray-400 font-semibold"
+              >Find Your Events</span
+            >
+          </div>
+          <div
+            class="h-full w-1/6 text-white bg-[#E60965] hover:text-red-200 inline-flex font-bold flex-col justify-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 mx-auto w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="8"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </div>
+        </div>
+        
+        <div
+        id="vendor-list" class=" hidden w-full h-80 shadow-2xl rounded-md bg-slate-100 z-10 relative top-24"
+     >
+     <div class="inline-flex h-full w-full box-border p-4">
+      <div
+         id="event-list" class=" overflow-y-scroll inline-grid grid-cols-2 max-h-full justify-between  border-x-2  w-full text-center border-slate-300 bg-slate-100 flex-col"
+      >
+        
+        <!-- <a href="/coming-soon"><div class="hover:bg-slate-200 cursor-pointer w-full border-b-2 border-slate-200 h-full p-2">All</div></a> -->
+        
+      </div>
+        
+       </div>
+     </div>
+     <!-- <div class="relative -bottom-[19rem] Staatliches text-center text-6xl text-white">
+      Cant find anything? <span class="text-red-700">Call Us</span>
+    </div> -->
+      </div>
+    </div>
+    <!--SAFETY-->
+    <div class="w-screen h-fit box-border  p-2 px-6 lg:px-36">
+      <div class="Staatliches text-slate-700  text-6xl w-full">
+        Our Safety Measures
+      </div>
+      <div class="max-w-full inline-flex overflow-x-scroll flex-none h-52 shrink-0 bg-white">
+        <div class=" mx-[5px] border-2 border-[#FA4EAB] rounded-md box-border min-w-[200px] p-2 justify-center  h-full inline-flex flex-col bg-slate-100">
+          <div class="w-full px-4 h-1/3"><img src="/images/covid/png/001-mask.png" alt="" class="w-full object-contain h-full" srcset=""></div>
+          <div class="w-full h-fit rounded-md p-2 bg-white">
+            <div class="text-center font-bold text-2xl">Protective Gears</div>
+            <div class="px-2 leading-4 text-sm mt-2">Routine use of Masks, gloves and sanitizers</div>
+          </div>
+        </div>
+        <div class=" mx-[5px] border-2 border-[#FA4EAB] rounded-md box-border min-w-[200px] p-2 justify-center  h-full inline-flex flex-col bg-slate-100">
+          <div class="w-full px-4 h-1/3"><img src="/images/covid/png/002-thermometer.png" alt="" class="w-full object-contain h-full" srcset=""></div>
+          <div class="w-full h-fit rounded-md p-2 bg-white">
+            <div class="text-center font-bold text-2xl">Staff Screening</div>
+            <div class="px-2 leading-4 text-sm mt-2">Regular temperature checks of the team.</div>
+          </div>
+        </div>
+        <!-- <div class=" mx-[5px] border-2 border-[#FA4EAB] rounded-md box-border min-w-[200px] p-2 justify-center  h-full inline-flex flex-col bg-slate-100">
+          <div class="w-full px-4 h-1/3"><img src="/images/covid/png/002-thermometer.png" alt="" class="w-full object-contain h-full" srcset=""></div>
+          <div class="w-full h-fit rounded-md p-2 bg-white">
+            <div class="text-center font-bold text-2xl">Staff Screening</div>
+            <div class="px-2 leading-4 text-sm mt-2">Regular temperature checks of the team</div>
+          </div>
+        </div> -->
+        <div class=" mx-[5px] border-2 border-[#FA4EAB] rounded-md box-border min-w-[200px] p-2 justify-center  h-full inline-flex flex-col bg-slate-100">
+          <div class="w-full px-4 h-1/3"><img src="/images/covid/png/arogya-setu.png" alt="" class="w-full object-contain h-full" srcset=""></div>
+          <div class="w-full h-fit rounded-md p-2 bg-white">
+            <div class="text-center font-bold text-2xl">Arogya Setu App</div>
+            <div class="px-2 leading-4 text-sm mt-2">Mandate usage of the app for periodic checks.</div>
+          </div>
+        </div>
+        <div class=" mx-[5px] border-2 border-[#FA4EAB] rounded-md box-border min-w-[200px] p-2 justify-center  h-full inline-flex flex-col bg-slate-100">
+          <div class="w-full px-4 h-1/3"><img src="/images/covid/png/003-hand-sanitizer.png" alt="" class="w-full object-contain h-full" srcset=""></div>
+          <div class="w-full h-fit rounded-md p-2 bg-white">
+            <div class="text-center font-bold text-2xl">Sanitization Services</div>
+            <div class="px-2 leading-4 text-sm mt-2">Initiatives to disinfect the workplace frequently</div>
+          </div>
+        </div>
+        <div class=" mx-[5px] border-2 border-[#FA4EAB] rounded-md box-border min-w-[200px] p-2 justify-center  h-full inline-flex flex-col bg-slate-100">
+          <div class="w-full px-4 h-1/3"><img src="/images/covid/png/004-keep-distance.png" alt="" class="w-full object-contain h-full" srcset=""></div>
+          <div class="w-full h-fit rounded-md p-2 bg-white">
+            <div class="text-center font-bold text-2xl">Social Distancing</div>
+            <div class="px-2 leading-4 text-sm mt-2">Maintain 3 feet distance & limit working stuff.</div>
+          </div>
+        </div>
+        <div class=" mx-[5px] border-2 border-[#FA4EAB] rounded-md box-border min-w-[200px] p-2 justify-center  h-full inline-flex flex-col bg-slate-100">
+          <div class="w-full px-4 h-1/3"><img src="images/logo.png" alt="" class="w-full object-contain h-full" srcset=""></div>
+          <div class="w-full h-fit rounded-md p-2 bg-white">
+            <div class="text-center font-bold text-2xl">Look for the Wedsafe</div>
+            <div class="px-2 leading-4 text-sm mt-2">To view all the safety initiatives taken by vendors</div>
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+     <!--ABOUT US-->   
+     <div class="box-border w-screen  p-6 lg:px-52">
+  
+      <div class="w-full h-full my-14 mb-24 inline-flex p-2 flex-col ">
+        <div class="Staatliches text-slate-700  text-6xl">ABOUT US</div>
+        <div class="inline-grid mt-6 w-full lg:grid-cols-2  ">
+          <div class="bg-black relative  w-full lg:w-[110%] h-full"> <video src="videos/Project_03-30_Full HD 1080p_MEDIUM_FR30.mp4" class="w-full relative  h-full object-cover" autoplay loop muted></video> </div>
+          <div class="w-full border-2 border-[#E60965]  lg:ml-[10%] relative top-6 lg:top-0 lg:left-6 p-2 box-border lg:text-xl inline-flex flex-col align-middle justify-center ">
+            <span class="Staatliches text-center">
+              <div class="w-full box-border px-4 text-2xl lg:text-4xl"px-2 lg:>We</div> <span class="Gill-Shadow text-2xl font-bold lg:text-4xl px-2 lg:px-4">EventSucceed</span><br> organise <span class="font-extrabold text-[#E60965] text-2xl lg:text-5xl px-2 lg:px-4">events</span> with <br> <span class="Yesteryear text-2xl lg:text-6xl px-2 lg:px-4">Uniqueness</span> and <span class="Yesteryear text-2xl lg:text-6xl px-2 lg:px-4">Tradition</span><br> so that every event is <br> <span class="Gill-Shadow text-2xl lg:text-4xl px-2 lg:px-4">memorable</span>
+             </span>
+          </div>
+        </div>
+      </div>
+     </div>   
+     <!--ADV-1-->
+    <div class="w-screen box-border px-6 lg:px-48  h-fit">
+      <div class="w-full inline-flex  h-80 pink-gradient">
+          <div class="px-2 lg:px-14 w-2/3 py-6 box-border h-full">
+            <div class="w-full h-full  inline-flex flex-col justify-center">
+              <div class="text-3xl lg:text-5xl Staatliches  text-slate-700 box-border px-6 ">
+              Your occassion deserves our careful planning </div>
+              <div class="px-6 pt-6" >
+                <button onclick="location.href = '/coming-soon';" class="bg-white p-2 Gill-Shadow text-slate-700 px-4 rounded-md border-2 text-2xl md:text-4xl border-slate-400">
+                  Explore
+                </button>
+              </div>
+              
+            </div>
+          </div>
+          <div class="w-1/3 h-full">
+            <img class="object-cover w-full h-full" src="images/engagement/joel-overbeck-fGPGd9PFd3w-unsplash.jpg" alt="">
+          </div>
+      </div>
+    </div>  
+    <!---->
+
+    <!--POPULAR VENUE SEARCH-->
+    <div class="w-screen mt-16 h-fit  box-border px-6 lg:px-52">
+      
+
+      <div class="w-full h-fit lg:h-72">
+        <div class="Staatliches text-slate-700  text-6xl">Popular Venue Search</div>
+        <div class="text-center w-full inline-flex justify-center h-fit">
+          <div id="venue-left-button"class="hidden lg:inline-flex flex-col justify-center align-middle  w-fit relative  h-36 ">
+            <div class="w-fit h-fit"><i class="text-6xl ri-arrow-left-circle-fill"></i></div>
+          </div>
+          <div id="venue" class="overflow-x-hidden inline-block mx-auto w-full lg:w-[70vw]">
+            <div class="w-fit flex-nowrap inline-flex  flex-col lg:flex-row " >
+              <div class="mx-2 border-2 border-[#FA4EAB]  px-6 lg:pl-2 min-w-80 lg:w-[300px] h-36 py-2 box-border inline-flex ">
+                <div class="w-1/2 h-full box-border py-2 ">
+                  <img class="object-cover h-full w-full rounded-md" src="/images/venue/amish-thakkar-1rLF6hxmm7M-unsplash.jpg" alt=""></div>
+                <div class="pl-4 box-border py-2 ">
+                  <div class="text-slate-700 leading-0 font-bold text-lg">4 Star & Abover Hotels</div>
+                  <div class="text-red-500  ">
+                    <span class="text-md w-fit border-red-500 pl-2" >| Kolkata</span>
+                    <span class="text-md w-fit border-red-500 pl-2" >| Howrah</span>
+                    <span class="text-md w-fit border-red-500 pl-2" >| Bardhaman</span>
+                    <span class="text-sm w-fit border-red-500 pl-2" >| Durgapur</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mx-2 border-2 border-[#FA4EAB]  px-6 lg:pl-2 min-w-80 lg:w-[300px] h-36 py-2 box-border inline-flex ">
+                <div class="w-1/2 h-full box-border py-2 ">
+                  <img class="object-cover h-full w-full rounded-md" src="/images/venue/arshad-pooloo-GdwWrLHdwpw-unsplash.jpg" alt=""></div>
+                <div class="pl-4 box-border py-2 ">
+                  <div class="text-slate-700 leading-0 font-bold text-lg">4 Star & Abover Hotels</div>
+                  <div class="text-red-500  ">
+                    <span class="text-md w-fit border-red-500 pl-2" >| Kolkata</span>
+                    <span class="text-md w-fit border-red-500 pl-2" >| Howrah</span>
+                    <span class="text-md w-fit border-red-500 pl-2" >| Bardhaman</span>
+                    <span class="text-sm w-fit border-red-500 pl-2" >| Durgapur</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mx-2 border-2 border-[#FA4EAB]  px-6 lg:pl-2 min-w-80 lg:w-[300px] h-36 py-2 box-border inline-flex ">
+                <div class="w-1/2 h-full box-border py-2 ">
+                  <img class="object-cover h-full w-full rounded-md" src="/images/venue/azrul-aziz-DsvY9NRykRg-unsplash.jpg" alt=""></div>
+                <div class="pl-4 box-border py-2 ">
+                  <div class="text-slate-700 leading-0 font-bold text-lg">4 Star & Abover Hotels</div>
+                  <div class="text-red-500  ">
+                    <span class="text-md w-fit border-red-500 pl-2" >| Kolkata</span>
+                    <span class="text-md w-fit border-red-500 pl-2" >| Howrah</span>
+                    <span class="text-md w-fit border-red-500 pl-2" >| Bardhaman</span>
+                    <span class="text-sm w-fit border-red-500 pl-2" >| Durgapur</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mx-2 border-2 border-[#FA4EAB]  px-6 lg:pl-2 min-w-80 lg:w-[300px] h-36 py-2 box-border inline-flex ">
+                <div class="w-1/2 h-full box-border py-2 ">
+                  <img class="object-cover h-full w-full rounded-md" src="/images/decoration/chamika-dharmasena-9fqaCy7OopQ-unsplash.jpg" alt=""></div>
+                <div class="pl-4 box-border py-2 ">
+                  <div class="text-slate-700 leading-0 font-bold text-lg">4 Star & Abover Hotels</div>
+                  <div class="text-red-500  ">
+                    <span class="text-md w-fit border-red-500 pl-2" >| Kolkata</span>
+                    <span class="text-md w-fit border-red-500 pl-2" >| Howrah</span>
+                    <span class="text-md w-fit border-red-500 pl-2" >| Bardhaman</span>
+                    <span class="text-sm w-fit border-red-500 pl-2" >| Durgapur</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mx-2 border-2 border-[#FA4EAB] px-6 lg:pl-2  min-w-80 lg:w-[300px] h-36 py-2 box-border inline-flex ">
+                <div class="w-1/2 h-full box-border py-2 ">
+                  <img class="object-cover h-full w-full rounded-md" src="/images/decoration/kevin-lanceplaine-HLtekROPGLs-unsplash.jpg" alt=""></div>
+                <div class="pl-4 box-border py-2 ">
+                  <div class="text-slate-700 leading-0 font-bold text-lg">4 Star & Abover Hotels</div>
+                  <div class="text-red-500  ">
+                    <span class="text-md w-fit border-red-500 pl-2" >| Kolkata</span>
+                    <span class="text-md w-fit border-red-500 pl-2" >| Howrah</span>
+                    <span class="text-md w-fit border-red-500 pl-2" >| Bardhaman</span>
+                    <span class="text-sm w-fit border-red-500 pl-2" >| Durgapur</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="venue-right-button"class="hidden lg:inline-flex flex-col justify-center align-middle  w-fit relative  h-36 ">
+            <div class="w-fit h-fit"><i class="text-6xl  ri-arrow-right-circle-fill"></i></div>
+          </div>
+        </div>
+        
+        
+      </div>
+
+    </div>
+    <!---->
+
+    <!--OUR NEW BLOGS-->
+    <div
+      id="vendor-advertisement"
+      class="w-screen h-fit p-6  lg:px-52 box-border">
+      <div class="Staatliches text-slate-700  text-6xl">
+      Our new blogs
+      </div>
+      <div id="vendor-wrap" class="w-full h-fit box-border overflow-auto">
+        <div class="inline-flex justify-center w-fit  lg:w-full h-full py-2 box-border">
+          <div class="w-[85vw] h-[30rem] md:w-[40vw] box-border">
+            <div
+              class="w-full box-border px-2 h-full mx-auto inline-flex md:mx-2 flex-col"
+            >
+              <div class="h-2/3 py-2 w-full">
+                <img
+                  src="/images/makeup/bulbul-ahmed-arn2mcDxcEk-unsplash.jpg"
+                  class="h-full w-full object-cover"
+                  alt=""
+                />
+              </div>
+              <div class="w-full h-fit bg-white rounded-md -mt-[75px] px-4">
+                <div class="font-bold text-xl text-center">LOREM IPSUM</div>
+                <div class="text-sm w-full mt-1 text-center">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Facere, corporis vero enim, consequatur ex veniam consectetur
+                  architecto nihil ducimus, molestias deserunt fuga! Repellendus
+                  minus facere eveniet neque asperiores nam porro?
+                </div>
+                <div class="w-full my-2 text-center h-fit">
+                  <button
+                  onclick="location.href = '/coming-soon';" class="px-6 py-2  hover:bg-gray-700 bg-gray-900 rounded-md font-bold text-white"
+                  >
+                    KNOW MORE
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-[85vw] h-[30rem] md:w-[40vw] box-border">
+            <div
+              class="w-[100%] box-border px-2 h-full mx-auto inline-flex md:mx-2 flex-col"
+            >
+              <div class="h-2/3 py-2 w-full">
+                <img
+                  src="/images/decoration/nick-karvounis-8WODX7nO2JE-unsplash.jpg"
+                  class="h-full w-full object-cover"
+                  alt=""
+                />
+              </div>
+              <div class="w-full h-fit bg-white rounded-md -mt-[75px] px-4">
+                <div class="font-bold text-xl text-center">LOREM IPSUM</div>
+                <div class="text-sm w-full mt-1 text-center">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Facere, corporis vero enim, consequatur ex veniam consectetur
+                  architecto nihil ducimus, molestias deserunt fuga! Repellendus
+                  minus facere eveniet neque asperiores nam porro?
+                </div>
+                <div class="w-full my-2 text-center h-fit">
+                  <button
+                  onclick="location.href = '/coming-soon';"  class="px-6 py-2 hover:bg-gray-700 bg-gray-900 rounded-md font-bold text-white"
+                  >
+                    KNOW MORE
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-[85vw] h-[30rem] md:w-[40vw] box-border">
+            <div
+              class="w-[100%] box-border px-2 h-full mx-auto inline-flex md:mx-2 flex-col"
+            >
+              <div class="h-2/3 py-2 w-full">
+                <img
+                  src="/images/baby-shower/rajesh-rajput-q40XeNnqUTo-unsplash.jpg"
+                  class="h-full w-full object-cover"
+                  alt=""
+                />
+              </div>
+              <div class="w-full h-fit bg-white rounded-md -mt-[75px] px-4">
+                <div class="font-bold text-xl text-center">LOREM IPSUM</div>
+                <div class="text-sm w-full mt-1 text-center">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Facere, corporis vero enim, consequatur ex veniam consectetur
+                  architecto nihil ducimus, molestias deserunt fuga! Repellendus
+                  minus facere eveniet neque asperiores nam porro?
+                </div>
+                <div class="w-full my-2 text-center h-fit">
+                  <button
+                  onclick="location.href = '/coming-soon';" class="px-6 py-2 hover:bg-gray-700 bg-gray-900 rounded-md font-bold text-white"
+                  >
+                    KNOW MORE
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="w-[85vw] h-[30rem] md:w-[20vw] box-border">
+            <div
+              class="w-[100%] box-border px-2 h-full mx-auto inline-flex md:mx-2 flex-col"
+            >
+              <div class="h-2/3 py-2 w-full">
+                <img
+                  src="/images/fire.jpg"
+                  class="h-full w-full object-cover"
+                  alt=""
+                />
+              </div>
+              <div class="w-full h-fit bg-slate-100 rounded-md -mt-[75px] px-4">
+                <div class="font-bold text-xl text-center">LOREM IPSUM</div>
+                <div class="text-sm w-full mt-1 text-center">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Facere, corporis vero enim, consequatur ex veniam consectetur
+                  architecto nihil ducimus, molestias deserunt fuga! Repellendus
+                  minus facere eveniet neque asperiores nam porro?
+                </div>
+                <div class="w-full my-2 text-center h-fit">
+                  <button
+                    class="px-6 py-2 hover:bg-gray-700 bg-gray-900 rounded-md font-bold text-white"
+                  >
+                    KNOW MORE
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!-- <div class="w-[85vw] h-[30rem] md:w-[20vw] box-border">
+            <div
+              class="w-[100%] box-border px-2 h-full mx-auto inline-flex md:mx-2 flex-col"
+            >
+              <div class="h-2/3 py-2 w-full">
+                <img
+                  src="/images/fire.jpg"
+                  class="h-full w-full object-cover"
+                  alt=""
+                />
+              </div>
+              <div class="w-full h-fit bg-slate-100 rounded-md -mt-[75px] px-4">
+                <div class="font-bold text-xl text-center">LOREM IPSUM</div>
+                <div class="text-sm w-full mt-1 text-center">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Facere, corporis vero enim, consequatur ex veniam consectetur
+                  architecto nihil ducimus, molestias deserunt fuga! Repellendus
+                  minus facere eveniet neque asperiores nam porro?
+                </div>
+                <div class="w-full my-2 text-center h-fit">
+                  <button
+                    class="px-6 py-2 hover:bg-gray-700 bg-gray-900 rounded-md font-bold text-white"
+                  >
+                    KNOW MORE
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <!--POPULAR SEARCHES-->
+    <div class="w-screen h-fit px-6 lg:px-52">
+      <div class="w-full  h-fit box-border py-4">
+        <div class="Staatliches text-slate-700  text-6xl">
+          POPULAR SEARCHES
+        </div>
+        <div class="text-center w-full inline-flex justify-center h-fit">
+          <div id="popular-search-left-button"class="inline-flex flex-col justify-center align-middle  w-fit relative  h-[22rem] ">
+            <div class="w-fit h-fit"><i class="text-4xl lg:text-6xl ri-arrow-left-circle-fill"></i></div>
+          </div>
+          <div id="popular-search"class="w-[70vw] overflow-x-hidden"><div class="py-6 inline-flex h-full ">
+            <div onclick="location.href = '/coming-soon';" class="w-72 h-full pr-4">
+              <div class="w-full rounded-md overflow-y-hidden h-72" > <img class=" rounded-md w-full object-cover hover:w-[110%] hover:h-[110%] h-full" src="/images/marriage/adryan-ra-dIrpottJxeA-unsplash.jpg" alt="" srcset=""> </div>
+              <div class="text-lg font-normal p-2 px-4 text-slate-700">Bridal Wear</div>
+            </div>
+            <div onclick="location.href = '/coming-soon';" class="w-72 h-full pr-4">
+              <div class="w-full rounded-md overflow-y-hidden h-72" > <img class=" rounded-md w-full object-cover hover:w-[110%] hover:h-[110%] h-full" src="/images/makeup/ayrus-hill-QIPpS02wKX4-unsplash.jpg" alt="" srcset=""> </div>
+              <div class="text-lg font-normal p-2 px-4 text-slate-700">Bridal Makeup</div>
+            </div>
+            <div onclick="location.href = '/coming-soon';" class="w-72 h-full pr-4">
+              <div class="w-full rounded-md overflow-y-hidden h-72" > <img class=" rounded-md w-full object-cover hover:w-[110%] hover:h-[110%] h-full" src="/images/decoration/nick-karvounis-8WODX7nO2JE-unsplash.jpg" alt="" srcset=""> </div>
+              <div class="text-lg font-normal p-2 px-4 text-slate-700">Photographer</div>
+            </div>
+            <div onclick="location.href = '/coming-soon';" class="w-72 h-full pr-4">
+              <div class="w-full rounded-md overflow-y-hidden h-72" > <img class=" rounded-md w-full object-cover hover:w-[110%] hover:h-[110%] h-full" src="/images/decoration/anton-mislawsky-S8VoxKULWrU-unsplash.jpg" alt="" srcset=""> </div>
+              <div class="text-lg font-normal p-2 px-4 text-slate-700">Invitations</div>
+            </div>
+            <div onclick="location.href = '/coming-soon';" class="w-72 h-full pr-4">
+              <div class="w-full rounded-md overflow-y-hidden h-72" > <img class=" rounded-md w-full object-cover hover:w-[110%] hover:h-[110%] h-full" src="/images/food/clem-onojeghuo-n2WHxdFtIXU-unsplash.jpg" alt="" srcset=""> </div>
+              <div class="text-lg font-normal p-2 px-4 text-slate-700">Catering Service</div>
+            </div>
+            
+  
+          </div>
+        </div>
+        <div id="popular-search-right-button"class="inline-flex flex-col justify-center align-middle  w-fit relative  h-[22rem] ">
+          <div class="w-fit h-fit"><i class="text-4xl lg:text-6xl ri-arrow-right-circle-fill"></i></div>
+        </div>
+      </div>
+        
+      </div>
+    </div>
+    <!---->
+    <!--EVENT CATEGORIES-->
+    <div class="w-screen h-fit px-6 lg:px-52">
+      <div class="w-full h-fit">
+        <div class="Staatliches text-slate-700  text-6xl">Event Categories</div>
+        <div class="inline-grid w-full grid-cols-1 md:grid-cols-2">
+          <div class="w-full h-36 box-border p-2 ">
+            <div class=" rounded-md w-full p-2 h-full inline-flex">
+              <div class="w-2/3 bg-red-200 inline-flex flex-col justify-center px-12 text-center h-full">
+                
+                <div class="text-3xl font-medium Staatliches">Engagement</div>
+                <div class="text-md ">Lorem, Ipsum, Dolor</div>
+                
+                
+              </div>
+              <div class="w-1/3 h-full">
+                <img class="h-full w-full object-cover" src="/images/engagement/vaibhav-nagare-ygwz3w6Cxog-unsplash.jpg" alt="" srcset="">
+              </div>
+            </div>
+          </div>
+          <div class="w-full h-36 box-border p-2 ">
+            <div class=" rounded-md w-full p-2 h-full inline-flex">
+              <div class="w-2/3 bg-blue-200 inline-flex flex-col justify-center px-12 text-center h-full">
+                
+                <div class="text-3xl font-medium Staatliches">Marriage</div>
+                <div class="text-md ">Lorem, Ipsum, Dolor</div>
+                
+                
+              </div>
+              <div class="w-1/3 h-full">
+                <img class="h-full w-full object-cover" src="/images/marriage/arka-karmakar-TusMg03NLf4-unsplash.jpg" alt="" srcset="">
+              </div>
+            </div>
+          </div>
+          <div class="w-full h-36 box-border p-2 ">
+            <div class=" rounded-md w-full p-2 h-full inline-flex">
+              <div class="w-2/3 bg-[#AD7953] inline-flex flex-col justify-center px-12 text-center h-full">
+                
+                <div class="text-3xl font-medium Staatliches">Baby SHower</div>
+                <div class="text-md ">Lorem, Ipsum, Dolor</div>
+                
+                
+              </div>
+              <div class="w-1/3 h-full">
+                <img class="h-full w-full object-cover" src="/images/baby-shower/rajesh-rajput-hSPqIx9tCew-unsplash.jpg" alt="" srcset="">
+              </div>
+            </div>
+          </div>
+          <div class="w-full h-36 box-border p-2 ">
+            <div class=" rounded-md w-full p-2 h-full inline-flex">
+              <div class="w-2/3 bg-purple-200 inline-flex flex-col justify-center px-12 text-center h-full">
+                
+                <div class="text-3xl font-medium Staatliches">Lorem</div>
+                <div class="text-md ">Lorem, Ipsum, Dolor</div>
+                
+                
+              </div>
+              <div class="w-1/3 h-full">
+                <img class="h-full w-full object-cover" src="/images/decoration/rob-sarmiento-BvwiSiU6MhU-unsplash.jpg" alt="" srcset="">
+              </div>
+            </div>
+          </div>
+          <div class="w-full h-36 box-border p-2 ">
+            <div class=" rounded-md w-full p-2 h-full inline-flex">
+              <div class="w-2/3 bg-[#D9D0B4] inline-flex flex-col justify-center px-12 text-center h-full">
+                
+                <div class="text-3xl font-medium Staatliches">Lorem</div>
+                <div class="text-md ">Lorem, Ipsum, Dolor</div>
+                
+                
+              </div>
+              <div class="w-1/3 h-full">
+                <img class="h-full w-full object-cover" src="/images/decoration/rob-sarmiento-BvwiSiU6MhU-unsplash.jpg" alt="" srcset="">
+              </div>
+            </div>
+          </div>
+          <div class="w-full h-36 box-border p-2 ">
+            <div class=" rounded-md w-full p-2 h-full inline-flex">
+               
+              <div class="w-2/3 bg-indigo-300 inline-flex flex-col justify-center px-12 text-center h-full">
+                
+                <div class="text-3xl font-medium Staatliches">Mehendi</div>
+                <div class="text-md ">Lorem, Ipsum, Dolor</div>
+                
+                
+              </div>
+              <div class="w-1/3 h-full">
+                <img class="h-full w-full object-cover" src="/images/mehendi/fas-khan-e23HVQIGH6Q-unsplash (1).jpg" alt="" srcset="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---->
+    <!--WORK SHOWCASE-->
+      <div class="w-full h-fit bg-slate-100 mt-7 p-2 md:px-6 ">
+        <!-- <div class="h-96 box-border lg:px-24 w-full">
+          <video
+            src="/assets/videos/background-video.mp4"
+            class="w-full h-full object-cover"
+            id="main-video"
+            loop
+            muted
+            video>
+        </div> -->
+        <div
+          class="grid h-fit grid-cols-2 md:grid-cols-2 lg:grid-cols-2 lg:px-4 overflow-y-hidden"
+        >
+          <div class="w-full box-border py-4 px-6 h-96">
+            <video
+              src="videos/background-video.mp4"
+              class="video w-full h-full object-cover"
+              type="video/mp4"
+              loop
+              muted
+              ></video>
+            
+          </div>
+          <div class="w-full box-border py-4 px-6 h-96">
+            <video
+              src="videos/background-video.mp4"
+              class="video w-full h-full object-cover"
+              type="video/mp4"
+              loop
+              muted
+            ></video>
+          </div>
+          <div class="w-full box-border py-4 px-6 h-96">
+            <video
+              src="videos/background-video.mp4"
+              class="video w-full h-full object-cover"
+              type="video/mp4"
+              loop
+              muted
+            ></video>
+          </div>
+          <div class="w-full box-border py-4 px-6 h-96">
+            <video
+              src="videos/background-video.mp4"
+              class="video w-full h-full object-cover"
+              type="video/mp4"
+              loop
+              muted
+            ></video>
+          </div>
+          <!-- <div class="w-full box-border py-2 px-2 h-52">
+            <video
+              src="/assets/videos/background-video.mp4"
+              class="video w-full h-full object-cover"
+              type="video/mp4"
+              loop
+              muted
+            ></video>
+          </div> -->
+        </div>
+        <div class="mt-10 mb-6">
+          <div class= " text-2xl text-black Staatliches lg:text-6xl lg:px-72 font-extrabold text-center">
+            What is an event without some good food?!
+          </div>
+          <!-- <div class="text-center font-medium text-2xl text-slate-400">
+            Get our best chefs from <span class="font-extrabold text-4xl px-4 text-white inline-flex uppercase whitespace-nowrap">Hell's Kitchen</span> to cook for your events
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <!--INHOUSE SERVICES-->
+    <div class="w-screen h-fit mt-12 px-6 lg:px-52">
+      <div class="w-full py-6 h-fit">
+        <div class="Staatliches text-slate-700  text-6xl">
+          INHOUSE SERVICES
+        </div>
+        <div class="inline-grid grid-cols-1 h-fit md:grid-cols-2">
+          <div class="w-full h-fit p-4 box-border py-10 inline-flex flex-col">
+            <div class="w-full overflow-hidden h-96"><img class=" w-full h-full object-cover" src="images/food/caroline-hernandez-8IR7jXjNG0w-unsplash.jpg" alt="" srcset=""></div>
+            <div class="w-full h-36 text-center py-4 ">
+              <div class="text-4xl Yesteryear font-normal text-slate-700">Lorem Ipsum <br> <span class="text-lg Staatliches font-normal">Lorem, Ipsum, Dolor</span></div>
+              <div class="my-4"><button onclick="location.href = '/coming-soon';" class="border-2 border-[#E60965] hover:bg-[#E60965] hover:text-white p-4 px-6 text-2xl">Explore</button></div>
+            </div>
+          </div>
+          <div class="w-full h-fit p-4 box-border py-10 inline-flex flex-col">
+            <div class="w-full overflow-hidden h-96"><img class=" w-full h-full object-cover" src="/images/decoration/guanfranco-g-82p7JgzKOpo-unsplash.jpg" alt="" srcset=""></div>
+            <div class="w-full h-36 text-center py-4 ">
+              <div class="text-4xl Yesteryear font-normal text-slate-700">Lorem Ipsum <br> <span class="text-lg Staatliches font-normal">Lorem, Ipsum, Dolor</span></div>
+              <div class="my-4"><button onclick="location.href = '/coming-soon';" class="border-2 border-[#E60965] hover:bg-[#E60965] hover:text-white p-4 px-6 text-2xl">Explore</button></div>
+            </div>
+          </div>
+          <div class="w-full h-fit p-4 box-border py-10 inline-flex flex-col">
+            <div class="w-full overflow-hidden h-96"><img class=" w-full h-full object-cover" src="/images/venue/amish-thakkar-1rLF6hxmm7M-unsplash.jpg" alt="" srcset=""></div>
+            <div class="w-full h-36 text-center py-4 ">
+              <div class="text-4xl Yesteryear font-normal text-slate-700">Lorem Ipsum <br> <span class="text-lg Staatliches font-normal">Lorem, Ipsum, Dolor</span></div>
+              <div class="my-4"><button onclick="location.href = '/coming-soon';" class="border-2 border-[#E60965] hover:bg-[#E60965] hover:text-white p-4 px-6 text-2xl">Explore</button></div>
+            </div>
+          </div>
+          <div class="w-full h-fit p-4 box-border py-10 inline-flex flex-col">
+            <div class="w-full overflow-hidden h-96"><img class=" w-full h-full object-cover" src="/images/makeup/shoaib-bhatti-8uuKCQR3cxc-unsplash.jpg" alt="" srcset=""></div>
+            <div class="w-full h-36 text-center py-4 ">
+              <div class="text-4xl Yesteryear font-normal text-slate-700">Lorem Ipsum <br> <span class="text-lg Staatliches font-normal">Lorem, Ipsum, Dolor</span></div>
+              <div class="my-4"><button onclick="location.href = '/coming-soon';" class="border-2 border-[#E60965] hover:bg-[#E60965] hover:text-white p-4 px-6 text-2xl">Explore</button></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+     <!--POPULAR SEARCHES-2-->
+     <div class="w-screen h-fit px-6 lg:px-52">
+      <div class="w-full  h-fit box-border py-4">
+        <div class="Staatliches text-slate-700  text-6xl">
+         Gallery To Look For
+        </div>
+        
+        <div class="text-center w-full inline-flex justify-center h-fit">
+          <div id="popular-search2-left-button"class="inline-flex flex-col justify-center align-middle  w-fit relative  h-[22rem] ">
+            <div class="w-fit h-fit"><i class="text-4xl lg:text-6xl ri-arrow-left-circle-fill"></i></div>
+          </div>
+          <div id="popular-search2"class="w-[70vw] overflow-x-hidden"><div class="py-6 inline-flex h-full ">
+            <div onclick="location.href = '/coming-soon';" class="w-72 h-full pr-4">
+              <div class="w-full rounded-md overflow-y-hidden h-72" > <img class=" rounded-md w-full object-cover hover:w-[110%] hover:h-[110%] h-full" src="/images/decoration/jonathan-borba-JnWxlvh-FNo-unsplash.jpg" alt="" srcset=""> </div>
+              <div class="text-lg font-normal p-2 px-4 text-slate-700">Bridal Wear</div>
+            </div>
+            <div onclick="location.href = '/coming-soon';" class="w-72 h-full pr-4">
+              <div class="w-full rounded-md overflow-y-hidden h-72" > <img class=" rounded-md w-full object-cover hover:w-[110%] hover:h-[110%] h-full" src="/images/makeup/dollar-gill-oH-PNVWykUo-unsplash.jpg" alt="" srcset=""> </div>
+              <div class="text-lg font-normal p-2 px-4 text-slate-700">Bridal Makeup</div>
+            </div>
+            <div onclick="location.href = '/coming-soon';" class="w-72 h-full pr-4">
+              <div class="w-full rounded-md overflow-y-hidden h-72" > <img class=" rounded-md w-full object-cover hover:w-[110%] hover:h-[110%] h-full" src="/images/decoration/annie-spratt-uiWIMe_dMHU-unsplash.jpg" alt="" srcset=""> </div>
+              <div class="text-lg font-normal p-2 px-4 text-slate-700">Photographer</div>
+            </div>
+            <div onclick="location.href = '/coming-soon';" class="w-72 h-full pr-4">
+              <div class="w-full rounded-md overflow-y-hidden h-72" > <img class=" rounded-md w-full object-cover hover:w-[110%] hover:h-[110%] h-full" src="/images/marriage/amish-thakkar-8vmvtj_W4xQ-unsplash.jpg" alt="" srcset=""> </div>
+              <div class="text-lg font-normal p-2 px-4 text-slate-700">Invitations</div>
+            </div>
+            <div onclick="location.href = '/coming-soon';" class="w-72 h-full pr-4">
+              <div class="w-full rounded-md overflow-y-hidden h-72" > <img class=" rounded-md w-full object-cover hover:w-[110%] hover:h-[110%] h-full" src="/images/food/jordan-arnold-Ul07QK2AR-0-unsplash.jpg" alt="" srcset=""> </div>
+              <div class="text-lg font-normal p-2 px-4 text-slate-700">Catering Service</div>
+            </div>
+           
+  
+          </div>
+        </div>
+        <div id="popular-search2-right-button"class="inline-flex flex-col justify-center align-middle  w-fit relative  h-[22rem] ">
+          <div class="w-fit h-fit"><i class="text-4xl lg:text-6xl ri-arrow-right-circle-fill"></i></div>
+        </div>
+      </div>
+        
+      </div>
+    </div>
+    <!---->
+    <!--PHOTO BOOTH-->
+    <div class="w-screen px-6 mt-6 min-h-[90vh]   lg:px-72 box-border inline-flex flex-col overflow-x-hidden align-center">
+
+    <div class="Staatliches text-slate-700  text-6xl">
+      GALLERY
+    </div>
+    <div class="slider-container w-full h-fit px-4 box-border ">
+
+      <div class="slider-content">
+  
+          <div class="slider-single">
+              <img class="slider-single-image object-cover" src="images/food/chuttersnap-aEnH4hJ_Mrs-unsplash.jpg" alt="1" />
+              <h1 class="slider-single-title Staatliches font-bold uppercase">Catering</h1>
+              <a class="slider-single-likes" href="javascript:void(0);">
+                  <i class="fa fa-heart"></i>
+                  
+              </a>
+          </div>
+  
+          <div class="slider-single">
+              <img class="slider-single-image object-cover" src="images/decoration/anton-mislawsky-S8VoxKULWrU-unsplash.jpg" alt="2" />
+              <h1 class="slider-single-title Staatliches font-bold uppercase">Decoration</h1>
+              <a class="slider-single-likes" href="javascript:void(0);">
+                  <i class="fa fa-heart"></i>
+                  
+              </a>
+          </div>
+  
+          <div class="slider-single">
+              <img class="slider-single-image object-cover" src="images/engagement/vaibhav-nagare-ygwz3w6Cxog-unsplash.jpg" alt="3" />
+              <h1 class="slider-single-title Staatliches font-bold uppercase">Engagement</h1>
+              <a class="slider-single-likes" href="javascript:void(0);">
+                  <i class="fa fa-heart"></i>
+                  
+              </a>
+          </div>
+  
+  
+          <div class="slider-single">
+              <img class="slider-single-image object-cover" src="images/marriage/akhil-pawar-Ys52rPvPbpU-unsplash.jpg" alt="4" />
+              <h1 class="slider-single-title Staatliches font-bold uppercase">Marriage</h1>
+              <a class="slider-single-likes" href="javascript:void(0);">
+                  <i class="fa fa-heart"></i>
+                  
+              </a>
+          </div>
+  
+  
+          <div class="slider-single">
+              <img class="slider-single-image object-cover" src="images/religious-festival/rajesh-mishra-MeOiwmZwG_k-unsplash.jpg" alt="5" />
+              <h1 class="slider-single-title Staatliches font-bold uppercase">Religious Festival</h1>
+              <a class="slider-single-likes" href="javascript:void(0);">
+                  <i class="fa fa-heart"></i>
+                  
+              </a>
+          </div>
+  
+          <div class="slider-single">
+              <img class="slider-single-image object-cover" src="images/proposal/marcus-lewis-U63zXX2f7ho-unsplash.jpg" alt="6" />
+              <h1 class="slider-single-title Staatliches font-bold uppercase">Proposal</h1>
+              <a class="slider-single-likes" href="javascript:void(0);">
+                  <i class="fa fa-heart"></i>
+                  
+              </a>
+          </div>
+          <div class="slider-single">
+            <img class="slider-single-image object-cover" src="images/mehendi/victoria-heath-a9NPN-bjHXE-unsplash.jpg" alt="6" />
+            <h1 class="slider-single-title Staatliches font-bold uppercase">Mehendi</h1>
+            <a class="slider-single-likes" href="javascript:void(0);">
+                <i class="fa fa-heart"></i>
+                
+            </a>
+        </div>
+      </div>
+  </div>
+</div>
+<!--TESTIMONIALS-->
+    <div
+      id="testimonial"
+      class="w-screen h-fit p-6 md:px-24 lg:px-52 box-border">
+      <div class="Staatliches text-slate-700  text-6xl">
+      Testimonials
+      </div>
+      <div id="vendor-wrap" class="w-full h-full box-border overflow-auto">
+        <div class="inline-flex h-[85vh] py-2 box-border">
+          <div class="w-[85vw] h-full md:w-[60vw] lg:w-[20vw] box-border">
+            <div
+              class="w-[100%] box-border px-2 h-full mx-auto inline-flex md:mx-2 flex-col"
+            >
+              <div class="h-2/3 py-2 w-full">
+                <img
+                  src="/images/decoration/chamika-dharmasena-9fqaCy7OopQ-unsplash.jpg"
+                  class="h-full w-full object-cover"
+                  alt=""
+                />
+              </div>
+              <div class="w-full h-fit bg-white rounded-md -mt-[75px] px-4">
+                <div class="font-bold text-xl text-center">LOREM IPSUM</div>
+                <div class="text-sm w-full mt-1 text-center">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Facere, corporis vero enim, consequatur ex veniam consectetur
+                  architecto nihil ducimus, molestias deserunt fuga! Repellendus
+                  minus facere eveniet neque asperiores nam porro?
+                </div>
+                <div class="w-full my-2 text-center h-fit">
+                  <!-- <button
+                    class="px-6 py-2 hover:bg-gray-700 bg-gray-900 rounded-md font-bold text-white"
+                  >
+                    KNOW MORE
+                  </button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-[85vw] h-full md:w-[60vw] lg:w-[20vw] box-border">
+            <div
+              class="w-[100%] box-border px-2 h-full mx-auto inline-flex md:mx-2 flex-col"
+            >
+              <div class="h-2/3 py-2 w-full">
+                <img
+                  src="/images/food/stella-de-smit-sFHlUfyc23M-unsplash.jpg"
+                  class="h-full w-full object-cover"
+                  alt=""
+                />
+              </div>
+              <div class="w-full h-fit bg-white rounded-md -mt-[75px] px-4">
+                <div class="font-bold text-xl text-center">LOREM IPSUM</div>
+                <div class="text-sm w-full mt-1 text-center">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Facere, corporis vero enim, consequatur ex veniam consectetur
+                  architecto nihil ducimus, molestias deserunt fuga! Repellendus
+                  minus facere eveniet neque asperiores nam porro?
+                </div>
+                <div class="w-full my-2 text-center h-fit">
+                  <!-- <button
+                    class="px-6 py-2 hover:bg-gray-700 bg-gray-900 rounded-md font-bold text-white"
+                  >
+                    KNOW MORE
+                  </button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-[85vw] h-full md:w-[60vw] lg:w-[20vw] box-border">
+            <div
+              class="w-[100%] box-border px-2 h-full mx-auto inline-flex md:mx-2 flex-col"
+            >
+              <div class="h-2/3 py-2 w-full">
+                <img
+                  src="/images/engagement/joel-overbeck-fGPGd9PFd3w-unsplash.jpg"
+                  class="h-full w-full object-cover"
+                  alt=""
+                />
+              </div>
+              <div class="w-full h-fit bg-white rounded-md -mt-[75px] px-4">
+                <div class="font-bold text-xl text-center">LOREM IPSUM</div>
+                <div class="text-sm w-full mt-1 text-center">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Facere, corporis vero enim, consequatur ex veniam consectetur
+                  architecto nihil ducimus, molestias deserunt fuga! Repellendus
+                  minus facere eveniet neque asperiores nam porro?
+                </div>
+                <div class="w-full my-2 text-center h-fit">
+                  <!-- <button
+                    class="px-6 py-2 hover:bg-gray-700 bg-gray-900 rounded-md font-bold text-white"
+                  >
+                    KNOW MORE
+                  </button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-[85vw] h-full md:w-[60vw] lg:w-[20vw] box-border">
+            <div
+              class="w-[100%] box-border px-2 h-full mx-auto inline-flex md:mx-2 flex-col"
+            >
+              <div class="h-2/3 py-2 w-full">
+                <img
+                  src="/images/food/evelina-friman-hw_sKmjb0ns-unsplash.jpg"
+                  class="h-full w-full object-cover"
+                  alt=""
+                />
+              </div>
+              <div class="w-full h-fit bg-white rounded-md -mt-[75px] px-4">
+                <div class="font-bold text-xl text-center">LOREM IPSUM</div>
+                <div class="text-sm w-full mt-1 text-center">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Facere, corporis vero enim, consequatur ex veniam consectetur
+                  architecto nihil ducimus, molestias deserunt fuga! Repellendus
+                  minus facere eveniet neque asperiores nam porro?
+                </div>
+                <div class="w-full my-2 text-center h-fit">
+                  <!-- <button
+                    class="px-6 py-2 hover:bg-gray-700 bg-gray-900 rounded-md font-bold text-white"
+                  >
+                    KNOW MORE
+                  </button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-[85vw] h-full md:w-[60vw] lg:w-[20vw] box-border">
+            <div
+              class="w-[100%] box-border px-2 h-full mx-auto inline-flex md:mx-2 flex-col"
+            >
+              <div class="h-2/3 py-2 w-full">
+                <img
+                  src="/images/fire.jpg"
+                  class="h-full w-full object-cover"
+                  alt=""
+                />
+              </div>
+              <div class="w-full h-fit bg-white rounded-md -mt-[75px] px-4">
+                <div class="font-bold text-xl text-center">LOREM IPSUM</div>
+                <div class="text-sm w-full mt-1 text-center">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Facere, corporis vero enim, consequatur ex veniam consectetur
+                  architecto nihil ducimus, molestias deserunt fuga! Repellendus
+                  minus facere eveniet neque asperiores nam porro?
+                </div>
+                <div class="w-full my-2 text-center h-fit">
+                  <!-- <button
+                    class="px-6 py-2 hover:bg-gray-700 bg-gray-900 rounded-md font-bold text-white"
+                  >
+                    KNOW MORE
+                  </button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--QUERY-->
+    <!-- <div
+      id="query"
+      class="w-screen box-border h-96 lg:h-80 inline-flex justify-center flex-col bg-red-400 my-12"
+    >
+      <div>
+        <div class="text-center text-4xl font-bold">
+          Help us get back to you
+        </div>
+        <div
+          class="w-full flex flex-col lg:flex-row my-4 box-border lg:px-72 h-fit"
+        >
+          <div class="w-full lg:w-1/2 text-center h-fit pb-2 lg:py-4">
+            <input
+            id="callBack-email"
+              type="text"
+              placeholder="Email I.D."
+              class="rounded-md h-8 lg:h-16 px-4 w-5/6"
+            />
+          </div>
+          <div class="w-full lg:w-1/2 text-center h-fit pt-2 lg:py-4">
+            <input
+            id="callBack-phone"
+              type="text"
+              placeholder="Phone Number"
+              class="rounded-md h-8 lg:h-16 px-4 w-5/6"
+            />
+          </div>
+        </div>
+        <div
+          class="w-full flex flex-col lg:flex-row mb-4 box-border px-6 lg:px-72 h-fit"
+        >
+          <div
+            id="ivendor" class="w-full lg:w-1/2 text-center text-2xl border-b-2 lg:border-0  lg:border-r-2 rounded-md border-slate-500 cursor-pointer text-slate-700 font-bold bg-white py-2"
+          >
+            I am Vendor
+          </div>
+          <div
+            id="icustomer"class="w-full lg:w-1/2 text-center text-2xl  lg:border-0 lg:border-l-2 rounded-md border-slate-500 cursor-pointer text-slate-700 font-bold bg-white py-2"
+          >
+            I am Customer
+          </div>
+        </div>
+        <div>
+          <div class="w-full h-12 text-center">
+            
+            <input type="submit" class="bg-slate-900 hover:bg-slate-700 text-white w-5/6 lg:w-1/6 h-12 rounded-md font-bold" id="callBack-submit">
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div id="query" class="w-screen h-fit my-6 px-6 lg:px-52 ">
+      <div class="w-full h-fit inline-flex justify-center flex-col md:flex-row ">
+        <div id="query-box" class="py-4 px-4 bg-[#E60965] w-full md:w-2/3">
+          <div class="rounded-md w-full box-border mx-auto  inline-flex  ">
+            <div id="vendor-button" class="cursor-pointer Staatliches font-bold px-4 py-2 -ml-[2px] text-lg lg:text-2xl w-full  border-2  border-white rounded-md text-white ">I'm a Vendor</div>
+            <div id="customer-button"class="cursor-pointer Staatliches font-bold px-4 py-2 text-lg lg:text-2xl  w-full border-2 bg-blue-400  text-white  rounded-md ">I'm a Customer</div>
+          </div>
+          <div id="callback-options-vendor" class="w-full inline-grid mt-4  grid-cols-2">
+            
+          </div>
+          <div id="callback-options-customer" class="w-full hidden inline-grid mt-4 grid-cols-2">
+            
+          </div>
+          <div class="mt-2">
+            <div class="w-full  text-center h-fit mb-1 lg:py-1">
+            <input
+            id="callBack-email-1"
+              type="text"
+              placeholder="Email I.D."
+              class="rounded-md h-6 lg:h-12 px-4 w-5/6"
+            />
+          </div>
+            <div class="w-full  text-center h-fit  lg:py-1">
+            <input
+            id="callBack-phone-1"
+              type="text"
+              placeholder="Phone Number"
+              class="rounded-md h-6 lg:h-12 px-4 w-5/6"
+            />
+          </div>
+        </div>
+        <div class="mt-2">
+          <div class="w-full h-fit text-center">
+            
+            <input id="callback-submit-1" type="submit" class="bg-white cursor-pointer hover:border-2 border-white hover:text-white text-black w-fit h-fit box-border px-4 py-2 rounded-md font-bold hover:bg-slate-900" >
+          </div>
+        </div>
+      </div>
+        <div class="w-full md:pr-36 h-fit p-4 px-6 bg-white">
+          <div class=" inline-flex w-full h-fit flex-col justify-center ">
+            <div class="Staatliches text-8xl text-slate-500">Request <br><span class="text-8xl text-slate-300">Call-back</span></div>
+            <div class="Yesteryear text-2xl text-slate-700">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim cumque quia itaque, facilis explicabo rem mollitia, eaque tenetur expedita ut soluta amet odit ratione incidunt. Sint perferendis animi nam iste!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--CONTACT-->
+    <div class="w-full box-border h-fit px-6 lg:px-52">
+      <div class="w-full h-fit">
+        <div class="text-slate-700 font-bold text-lg">
+          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+        </div>
+        <div class="text-slate-700 my-4 font-normal text-md">
+          <span>Plan your event with Us.</span>
+        </div>
+        <div class="text-slate-700 my-4 font-normal text-md">
+          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic possimus consectetur nisi, itaque 
+            ullam ut ipsum magnam consequuntur, nemo saepe cum reprehenderit quod quam, ab enim iusto modi architecto quos.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic possimus consectetur nisi, itaque 
+            ullam ut ipsum magnam consequuntur, nemo saepe cum reprehenderit quod quam, ab enim iusto modi architecto quos.</span>
+        </div>
+        <div class="my-4">
+          <div class="text-slate-700 font-normal text-md">Contact us to get best deals</div>
+          <div class="text-slate-700 font-normal text-md">loremipsum@gmail.com</div>
+          <div class="text-slate-700 font-normal text-md">9876-543-210</div>
+        </div>
+        <div class="inline-flex flex-col lg:flex-row justify-between px-2 lg:px-16 w-full ">
+        <div class="lg:w-1/2" ><div class="my-2 w-full">
+          <div class="text-md font-bold text-slate-700">Get Latest Updates</div>
+          <div class="inline-flex w-full">
+            <div class="text-md border-1 w-[70%] border-slate-700 text-slate-700 font-normal "><input type="text" id="callback-email-2" name="Email" class="p-4 w-full" placeholder="Email*" id=""> </div>
+            <div class="w-[30%]" ><input type="submit"  id="callback-submit-2" class="bg-[#E60965] cursor-pointer px-4 w-full h-full text-md font-medium text-white " value="Subscribe"></div>
+          </div>
+        </div>
+        <div class="my-4">
+          <div class="text-slate-700 font-medium text-lg">Submit your wedding</div>
+          <div class="inline-flex py-4 ">
+            <a href="#query"><div class="mx-2 Staatliches p-4 text-md lg:text-2xl bg-white border-2 border-[#E60965] rounded-sm cursor-pointer hover:bg-[#E60965] hover:text-white">Submit Event</div></a>
+            <a href="#query"><div class="mx-2 Staatliches p-4 text-md lg:text-2xl bg-white border-2 border-blue-400 rounded-sm cursor-pointer hover:bg-blue-400 hover:text-white">Register as a Vendor</div></a>
+          </div>
+        </div></div>
+
+        <div class="lg:pl-24">
+          <div class="text-lg p-2 font-medium Staatliches text-slate-700">Follow us on:</div>
+          <div class="inline-grid w-full grid-cols-2">
+          <div class="w-fit min-w-full box-border h-fit p-2 "><span class=" box-border pr-2 h-fit"><img src="/images/mycollection-2/png/001-facebook.png" alt="" class="inline-block" srcset=""></span><span class="pl-2 text-md -mt-2 lg:text-lg font-medium text-slate-700">Facebook</span></div>
+          <div class="w-fit min-w-full box-border h-fit p-2 "><span class=" box-border pr-2 h-fit"><img src="/images/mycollection-2/png/002-instagram.png" alt="" class="inline-block" srcset=""></span><span class="pl-2 text-md -mt-2 lg:text-lg font-medium text-slate-700">Instagram</span></div>
+          <div class="w-fit min-w-full box-border h-fit p-2 "><span class=" box-border pr-2 h-fit"><img src="/images/mycollection-2/png/003-snapchat.png" alt="" class="inline-block" srcset=""></span><span class="pl-2 text-md -mt-2 lg:text-lg font-medium text-slate-700">Snapchat</span></div>
+          <div class="w-fit min-w-full box-border h-fit p-2 "><span class=" box-border pr-2 h-fit"><img src="/images/mycollection-2/png/004-youtube.png" alt="" class="inline-block" srcset=""></span><span class="pl-2 text-md -mt-2 lg:text-lg font-medium text-slate-700">Youtube</span></div>
+          <div class="w-fit min-w-full box-border h-fit p-2 "><span class=" box-border pr-2 h-fit"><img src="/images/mycollection-2/png/006-twitter.png" alt="" class="inline-block" srcset=""></span><span class="pl-2 text-md -mt-2 lg:text-lg font-medium text-slate-700">Twitter</span></div>
+          <div class="w-fit min-w-full box-border h-fit p-2 "><span class=" box-border pr-2 h-fit"><img src="/images/mycollection-2/png/005-pinterest.png" alt="" class="inline-block" srcset=""></span><span class="pl-2 text-md -mt-2 lg:text-lg font-medium text-slate-700">Pinterest</span></div>
+        </div>
+      </div>
+    </div>
+        
+      </div>
+
+    </div>
+    <hr class="text-slate-700 mt-9 h-[15px] w-[85vw] mx-auto">
+    <!--QUICK ACTION-->
+    <div class="w-screen mt-9 p-2 mb-9 px-2 box-border lg:px-52   h-fit">
+      <div class="w-full h-fit">
+        <div class="inline-grid w-full box-border lg:px-24 grid-cols-1 lg:grid-cols-4">
+          <div class="w-full border-b-2 border-slate-700  inline-flex h-fit flex-col lg:border-0">
+            <div class="quick w-full h-fit text-slate-700 text-md Staatliches inline-flex justify-between font-bold" >
+              <span class="py-2">Lorem Ipsum</span>
+              <span>
+                <i class="lg:hidden ri-arrow-down-s-fill"></i>
+              </span>
+            </div>
+            <div class="quick-sibling hidden lg:inline w-full h-fit">
+              <ul class="list-none text-slate-700 font-medium px-2 text-sm">
+                <li onclick="location.href = '/coming-soon';" class="hover:text-slate-400 cursor-pointer">Lorem</li>
+                <li onclick="location.href = '/coming-soon';" class="hover:text-slate-400 cursor-pointer">Ipsum</li>
+                <li onclick="location.href = '/coming-soon';" class="hover:text-slate-400 cursor-pointer">Dolor</li>
+                <li onclick="location.href = '/coming-soon';" class="hover:text-slate-400 cursor-pointer">Set</li>
+                
+              </ul>
+            </div>
+          </div>
+          <div class=" w-full border-b-2 border-slate-700  inline-flex h-fit flex-col lg:border-0">
+            <div class="quick w-full h-fit text-slate-700 text-md Staatliches inline-flex justify-between font-bold" >
+              <span class="py-2">Lorem Ipsum</span>
+              <span>
+                <i class="lg:hidden ri-arrow-down-s-fill"></i>
+              </span>
+            </div>
+            <div class="quick-sibling hidden lg:inline w-full h-fit">
+              <ul class="list-none text-slate-700 font-medium px-2 text-sm">
+                <li onclick="location.href = '/coming-soon';" class="hover:text-slate-400 cursor-pointer">Lorem</li>
+                <li onclick="location.href = '/coming-soon';" class="hover:text-slate-400 cursor-pointer">Ipsum</li>
+                <li onclick="location.href = '/coming-soon';" class="hover:text-slate-400 cursor-pointer">Dolor</li>
+                <li onclick="location.href = '/coming-soon';" class="hover:text-slate-400 cursor-pointer">Set</li>
+                <li onclick="location.href = '/coming-soon';" class="hover:text-slate-400 cursor-pointer">Amet</li>
+                <li onclick="location.href = '/coming-soon';" class="hover:text-slate-400 cursor-pointer">Lorem Ipsum</li>
+                <li onclick="location.href = '/coming-soon';" class="hover:text-slate-400 cursor-pointer">Dolor</li>
+                <li onclick="location.href = '/coming-soon';" class="hover:text-slate-400 cursor-pointer">Set</li>
+              </ul>
+            </div>
+          </div>
+          <div class=" w-full border-b-2 border-slate-700  inline-flex h-fit flex-col lg:border-0">
+            <div class="quick w-full h-fit text-slate-700 text-md Staatliches inline-flex justify-between font-bold" >
+              <span class="py-2">Lorem Ipsum</span>
+              <span>
+                <i class="lg:hidden ri-arrow-down-s-fill"></i>
+              </span>
+            </div>
+            <div class="quick-sibling hidden lg:inline w-full h-fit">
+              <ul class="list-none text-slate-700 font-medium px-2  text-sm">
+                <li onclick="location.href = '/coming-soon';" class="hover:text-slate-400 cursor-pointer">Lorem</li>
+                <li onclick="location.href = '/coming-soon';" class="hover:text-slate-400 cursor-pointer">Ipsum</li>
+                <li onclick="location.href = '/coming-soon';" class="hover:text-slate-400 cursor-pointer">Dolor</li>
+              
+              </ul>
+            </div>
+          </div>
+          <div class=" w-full border-b-2 border-slate-700  inline-flex h-fit flex-col lg:border-0">
+            <div class=" quick w-full h-fit text-slate-700 text-md Staatliches inline-flex justify-between font-bold" >
+              <span class="py-2">Lorem Ipsum</span>
+              <span>
+                <i class="lg:hidden ri-arrow-down-s-fill"></i>
+              </span>
+            </div>
+            <div class="quick-sibling hidden lg:inline w-full h-fit">
+              <ul class="list-none text-slate-700 font-medium px-2  text-sm">
+                <li onclick="location.href = '/coming-soon';" class="hover:text-slate-400 cursor-pointer">Lorem</li>
+                <li onclick="location.href = '/coming-soon';" class="hover:text-slate-400 cursor-pointer">Ipsum</li>
+                <li onclick="location.href = '/coming-soon';" class="hover:text-slate-400 cursor-pointer">Dolor</li>
+                <li onclick="location.href = '/coming-soon';" class="hover:text-slate-400 cursor-pointer">Set</li>
+                <li onclick="location.href = '/coming-soon';" class="hover:text-slate-400 cursor-pointer">Amet</li>
+                <li onclick="location.href = '/coming-soon';" class="hover:text-slate-400 cursor-pointer">Lorem Ipsum</li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="px-6 inline-flex flex-col align-middle md:flex-row justify-center lg:px-4 box-border bg-[#E60965] py-4 w-screen md:justify-between h-fit">
+      <div class="w-fit  h-fit text-center md:text-left">
+        <span><i class=" text-white text-lg ri-copyright-fill"></i></span>
+        <span class="text-slate-200 text-sm font-normal">Copyright by <span class="text-white Staatliches text-lg font-medium">EVENT SUCCEED</span></span>
+      </div>
+      <div class="w-fit  h-fit text-center md:text-right">
+        <span class="text-slate-200 text-sm font-normal">Terms & Conditions </span><span class="text-slate-200 text-sm   font-normal">| Privacy Policy</span>
+      </div>
+    </div>
+    <script src="/js/index.js"></script>
+    <script src="/js/event.js"></script>
+    <script src="/js/common.js"></script>
+    
+    <script src="/js/index-gallery.js"></script>
+  </body>
+</html>

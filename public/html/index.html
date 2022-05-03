@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/index-gallery.css">
+    <link rel="stylesheet" href="../css/custom.css">
+  </head>
+  <body class="m-0 w-screen box-border">
+    <!--QUERY-->
+    <div
+      class="flex z-10 flex-col justify-center align-middle fixed bottom-2 right-4"
+    >
+      <div class="w-20 h-20 bg-slate-900 rounded-full border-0">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-2/3 text-white text-center my-3 mx-auto w-2/3"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <!--NAVBAR-->
+    <div
+      id="navigation"
+      class="fixed top-0 left-0 w-full h-fit z-50 box-border bg-white"
+    >
+      <div class="inline-flex justify-between md:justify-between w-full">
+        <div class="flex">
+          <div class="w-12 h-12 m-2">
+            <img
+              src="../../assets/images/logo.png"
+              class="object-contain h-full w-full"
+              alt=""
+            />
+          </div>
+          <div class="p-2 font-bold md:mr-[40] h-14 my-auto">
+            <img
+            class="drop-shadow-2xl h-full  object-cover"
+            src="../../assets/images/logo.png"
+            alt=""
+          />
+          </div>
+        </div>
+        <div id="toggle" class="p-2 flex flex-col justify-center md:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+        <div
+          id="navbar"
+          class="invisible w-[60vw] fixed top-0 left-0 drop-shadow-2xl h-screen bg-slate-200 z-50"
+        >
+          <div
+            class="w-full pt-4 box-border inline-flex flex-col justify-start p-4 h-fit"
+          >
+            <div><img src="../../assets/images/logo.png" alt="" /></div>
+            
+            <div
+              id="event"class="nav-link py-2 border-b-[2px] hover:bg-gray-400 text-gray-600 rounded-md border-gray-300 pl-6 text-2xl"
+            >
+              Event
+            </div>
+          
+          <a href="">
+            <div
+              id="vendor"class="nav-link py-2 border-b-[2px] hover:bg-gray-400 text-gray-600 rounded-md border-gray-300 pl-6 text-2xl"
+            >
+              Vendor
+            </div>
+          </a>
+          <a href="">
+            <div
+              class="nav-link py-2 border-b-[2px] hover:bg-gray-400 text-gray-600 rounded-md border-gray-300 pl-6 text-2xl"
+            >
+              Review
+            </div>
+          </a>
+          <a href="">
+            <div
+              class="nav-link py-2 border-b-[2px] hover:bg-gray-400 text-gray-600 rounded-md border-gray-300 pl-6 text-2xl"
+            >
+              Blog
+            </div>
+          </a>
+          <a href="">
+            <div
+              class="nav-link py-2 border-b-[2px] hover:bg-gray-400 text-gray-600 rounded-md border-gray-300 pl-6 text-2xl"
+            >
+              Shop
+            </div>
+          </a>
+          </div>
+        </div>
+        <div
+          class="invisible absolute right-[-100%] md:visible flex md:relative md:right-0 h-fit my-auto align-middle md:-left-2"
+        >
+        
+          <div
+            class="h-full min-w-fit text-lg text-black hover:bg-gray-400 cursor-pointer font-semibold px-4 py-1 box-border md:text-xl md:px-4"
+          >
+            Events
+          </div>
+        
+        <a href="">
+          <div
+            class="h-full min-w-fit text-lg text-black hover:bg-gray-400 cursor-pointer font-semibold px-4 py-1 box-border md:text-xl md:px-4"
+          >
+            Vendors
+          </div>
+        </a>
+        <a href="">
+          <div
+            class="h-full min-w-fit text-lg text-black hover:bg-gray-400 cursor-pointer font-semibold px-4 py-1 box-border md:text-xl md:px-4"
+          >
+            Reviews
+          </div>
+        </a>
+        <a href="">
+          <div
+            class="h-full min-w-fit text-lg text-black hover:bg-gray-400 cursor-pointer font-semibold px-4 py-1 box-border md:text-xl md:px-4"
+          >
+            Blogs
+          </div>
+        </a>
+        <a href="">
+          <div
+            class="h-full min-w-fit text-lg text-black hover:bg-gray-400 cursor-pointer font-semibold px-4 py-1 box-border md:text-xl md:px-4"
+          >Shop</div>
+        </a>
+        </div>
+      </div>
+    </div>
+    <!--BANNER-->
+    <div id="banner" class="mb-10 w-screen mx-auto h-screen box-border">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTksGAVO48yp5B3afl646xFz3KgBw5g_B9A62VgqyE9qW_Dc-kbPOjYdQtcvkbKCHGdDQU&usqp=CAU"
+        class="w-full h-full box-border -z-10 object-cover lg:object-cover"
+        alt=""
+      />
+      <div
+        id="banner-wrap"
+        class="w-full h-full z-10 relative -top-full px-6 md:px-[25%] flex-col justify-center inline-flex"
+      >
+        <div class="w-fit mx-auto relative text-center text-7xl text-white font-extrabold -bottom-16">
+          EVENT SUCCEED
+        </div>
+        <div
+          class="text-white text-2xl relative shadow-2xl -bottom-16 text-center md:text-4xl font-bold md:font-medium"
+        >
+          Where every Event is unique and traditional.
+        </div>
+        <div
+        id="vendor-toggle" class="cursor-pointer w-full h-14 inline-flex bg-slate-100  rounded-md relative p-2 -bottom-24"
+        >
+          <div class="h-full inline-flex justify-between w-5/6 ">
+            <span class="p-2 text-left text-gray-400 font-semibold"
+              >Find Your Events</span
+            >
+          </div>
+          <div
+            class="h-full w-1/6 text-red-400 hover:text-red-200 inline-flex flex-col justify-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 mx-auto w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+        id="vendor-list" class=" hidden w-full h-80 shadow-2xl rounded-md bg-slate-100 z-10 relative top-24"
+     >
+       <div class="inline-flex h-full w-full box-border p-4">
+         <div
+           class="inline-flex h-full justify-between border-x-2  w-full text-center border-slate-300 bg-slate-100 flex-col"
+         >
+           <a href="./event/marriage.html"><div class="hover:bg-slate-200 cursor-pointer w-full border-b-2 border-slate-200 h-full p-2">Marriage</div></a>
+           <a href="./event/birthday.html.html"><div class="hover:bg-slate-200 cursor-pointer w-full border-b-2 border-slate-200 h-full p-2">Birthday</div></a>
+           <a href="./event/proposal.html"><div class="hover:bg-slate-200 cursor-pointer w-full border-b-2 border-slate-200 h-full p-2">Proposal</div></a>
+           <a href="./event/baby-shower.html"><div class="hover:bg-slate-200 cursor-pointer w-full border-b-2 border-slate-200 h-full p-2">Baby Shower</div></a></a>
+           <a href="./event/funeral.html"><div class="hover:bg-slate-200 cursor-pointer w-full border-b-2 border-slate-200 h-full p-2">Funeral</div></a>
+           <a href="./event/marriage.html"><div class="hover:bg-slate-200 cursor-pointer w-full border-b-2 border-slate-200 h-full p-2">Others..</div></a>
+         </div>
+        
+       </div>
+     </div>
+     <div class="w-full relative top-32 text-center text-white text-xl px-24 font-medium">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, sit assumenda commodi ea ex est molestiae ipsum velit facere similique officia soluta voluptatum maxime? Ea, rem? Ipsam sequi ipsum rem.
+     </div>
+      </div>
+    </div>
+    <!--SAFETY-->
+    <div class="w-screen h-72 box-border  p-2 px-6 lg:px-36">
+      <div class="max-w-full inline-flex overflow-x-scroll flex-none h-full shrink-0 bg-white">
+        <div class=" mx-[5px] box-border min-w-[200px] p-2  h-full inline-flex flex-col bg-slate-100">
+          <div class="w-full px-4 h-1/3"><img src="../../assets/images/logo.png" alt="" class="w-full object-contain h-full" srcset=""></div>
+          <div class="w-full h-2/3 rounded-md p-2 bg-white">
+            <div class="text-center font-bold text-2xl">Lorem Ipsum</div>
+            <div class="px-2 leading-4 text-sm mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+          </div>
+        </div>
+        <div class=" mx-[5px] box-border min-w-[200px] p-2  h-full inline-flex flex-col bg-slate-100">
+          <div class="w-full px-4 h-1/3"><img src="../../assets/images/logo.png" alt="" class="w-full object-contain h-full" srcset=""></div>
+          <div class="w-full h-2/3 rounded-md p-2 bg-white">
+            <div class="text-center font-bold text-2xl">Lorem Ipsum</div>
+            <div class="px-2 leading-4 text-sm mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+          </div>
+        </div>
+        <div class=" mx-[5px] box-border min-w-[200px] p-2  h-full inline-flex flex-col bg-slate-100">
+          <div class="w-full px-4 h-1/3"><img src="../../assets/images/logo.png" alt="" class="w-full object-contain h-full" srcset=""></div>
+          <div class="w-full h-2/3 rounded-md p-2 bg-white">
+            <div class="text-center font-bold text-2xl">Lorem Ipsum</div>
+            <div class="px-2 leading-4 text-sm mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+          </div>
+        </div>
+        <div class=" mx-[5px] box-border min-w-[200px] p-2  h-full inline-flex flex-col bg-slate-100">
+          <div class="w-full px-4 h-1/3"><img src="../../assets/images/logo.png" alt="" class="w-full object-contain h-full" srcset=""></div>
+          <div class="w-full h-2/3 rounded-md p-2 bg-white">
+            <div class="text-center font-bold text-2xl">Lorem Ipsum</div>
+            <div class="px-2 leading-4 text-sm mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+          </div>
+        </div>
+        <div class=" mx-[5px] box-border min-w-[200px] p-2  h-full inline-flex flex-col bg-slate-100">
+          <div class="w-full px-4 h-1/3"><img src="../../assets/images/logo.png" alt="" class="w-full object-contain h-full" srcset=""></div>
+          <div class="w-full h-2/3 rounded-md p-2 bg-white">
+            <div class="text-center font-bold text-2xl">Lorem Ipsum</div>
+            <div class="px-2 leading-4 text-sm mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+          </div>
+        </div>
+        <div class=" mx-[5px] box-border min-w-[200px] p-2  h-full inline-flex flex-col bg-slate-100">
+          <div class="w-full px-4 h-1/3"><img src="../../assets/images/logo.png" alt="" class="w-full object-contain h-full" srcset=""></div>
+          <div class="w-full h-2/3 rounded-md p-2 bg-white">
+            <div class="text-center font-bold text-2xl">Lorem Ipsum</div>
+            <div class="px-2 leading-4 text-sm mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+          </div>
+        </div>
+        <div class=" mx-[5px] box-border min-w-[200px] p-2  h-full inline-flex flex-col bg-slate-100">
+          <div class="w-full px-4 h-1/3"><img src="../../assets/images/logo.png" alt="" class="w-full object-contain h-full" srcset=""></div>
+          <div class="w-full h-2/3 rounded-md p-2 bg-white">
+            <div class="text-center font-bold text-2xl">Lorem Ipsum</div>
+            <div class="px-2 leading-4 text-sm mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+          </div>
+        </div>
+        <div class=" mx-[5px] box-border min-w-[200px] p-2  h-full inline-flex flex-col bg-slate-100">
+          <div class="w-full px-4 h-1/3"><img src="../../assets/images/logo.png" alt="" class="w-full object-contain h-full" srcset=""></div>
+          <div class="w-full h-2/3 rounded-md p-2 bg-white">
+            <div class="text-center font-bold text-2xl">Lorem Ipsum</div>
+            <div class="px-2 leading-4 text-sm mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+     <!--ABOUT US-->   
+     <div class="box-border w-screen  p-6 lg:px-24">
+  
+      <div class="w-full h-full my-14 mb-24 inline-flex p-2 flex-col ">
+        <div class="text-6xl text-center h-fit w-full font-bold">ABOUT US</div>
+        <div class="inline-grid mt-6 w-full lg:grid-cols-2 lg:px-24 ">
+          <div class="bg-black relative -left-2 w-full h-fit"> <video src="../../assets/videos/Project_03-30_Full HD 1080p_MEDIUM_FR30.mp4" class="w-full relative  h-full object-cover" autoplay loop muted></video> </div>
+          <div class="w-full relative top-6 lg:top-0 lg:left-6 mt-4 p-2 box-border lg:text-xl inline-flex flex-col ">
+            <span class="Staatliches">
+              <div class="w-full box-border px-4 text-4xl">We</div> <span class="Yesteryear text-6xl px-4">EventSucceed</span> organise <span class="Yesteryear text-6xl px-4">events</span> with uniqueness and tradition so that every event is memorable
+             </span>
+          </div>
+        </div>
+      </div>
+     </div>   
+
+      
+    <!--VENDOR ADVERTISEMENT-->
+    <!-- <div
+      id="vendor-advertisement"
+      class="w-screen h-[80vh] p-6 md:px-24 box-border"
+    >
+      <div id="vendor-wrap" class="w-full h-full box-border overflow-auto">
+        <div class="inline-flex h-full py-2 box-border">
+          <div class="w-[85vw] h-full md:w-[20vw] box-border">
+            <div
+              class="w-[100%] box-border px-2 h-full mx-auto inline-flex md:mx-2 flex-col"
+            >
+              <div class="h-2/3 py-2 w-full">
+                <img
+                  src=" /assets/images/download.jpg"
+                  class="h-full w-full object-cover"
+                  alt=""
+                />
+              </div>
+              <div class="w-full h-fit bg-slate-100 rounded-md -mt-[75px] px-4">
+                <div class="font-bold text-xl text-center">LOREM IPSUM</div>
+                <div class="text-sm w-full mt-1 text-center">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Facere, corporis vero enim, consequatur ex veniam consectetur
+                  architecto nihil ducimus, molestias deserunt fuga! Repellendus
+                  minus facere eveniet neque asperiores nam porro?
+                </div>
+                <div class="w-full my-2 text-center h-fit">
+                  <button
+                    class="px-6 py-2 hover:bg-gray-700 bg-gray-900 rounded-md font-bold text-white"
+                  >
+                    KNOW MORE
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-[85vw] h-full md:w-[20vw] box-border">
+            <div
+              class="w-[100%] box-border px-2 h-full mx-auto inline-flex md:mx-2 flex-col"
+            >
+              <div class="h-2/3 py-2 w-full">
+                <img
+                  src=" /assets/images/download.jpg"
+                  class="h-full w-full object-cover"
+                  alt=""
+                />
+              </div>
+              <div class="w-full h-fit bg-slate-100 rounded-md -mt-[75px] px-4">
+                <div class="font-bold text-xl text-center">LOREM IPSUM</div>
+                <div class="text-sm w-full mt-1 text-center">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Facere, corporis vero enim, consequatur ex veniam consectetur
+                  architecto nihil ducimus, molestias deserunt fuga! Repellendus
+                  minus facere eveniet neque asperiores nam porro?
+                </div>
+                <div class="w-full my-2 text-center h-fit">
+                  <button
+                    class="px-6 py-2 hover:bg-gray-700 bg-gray-900 rounded-md font-bold text-white"
+                  >
+                    KNOW MORE
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-[85vw] h-full md:w-[20vw] box-border">
+            <div
+              class="w-[100%] box-border px-2 h-full mx-auto inline-flex md:mx-2 flex-col"
+            >
+              <div class="h-2/3 py-2 w-full">
+                <img
+                  src=" /assets/images/download.jpg"
+                  class="h-full w-full object-cover"
+                  alt=""
+                />
+              </div>
+              <div class="w-full h-fit bg-slate-100 rounded-md -mt-[75px] px-4">
+                <div class="font-bold text-xl text-center">LOREM IPSUM</div>
+                <div class="text-sm w-full mt-1 text-center">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Facere, corporis vero enim, consequatur ex veniam consectetur
+                  architecto nihil ducimus, molestias deserunt fuga! Repellendus
+                  minus facere eveniet neque asperiores nam porro?
+                </div>
+                <div class="w-full my-2 text-center h-fit">
+                  <button
+                    class="px-6 py-2 hover:bg-gray-700 bg-gray-900 rounded-md font-bold text-white"
+                  >
+                    KNOW MORE
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-[85vw] h-full md:w-[20vw] box-border">
+            <div
+              class="w-[100%] box-border px-2 h-full mx-auto inline-flex md:mx-2 flex-col"
+            >
+              <div class="h-2/3 py-2 w-full">
+                <img
+                  src=" /assets/images/download.jpg"
+                  class="h-full w-full object-cover"
+                  alt=""
+                />
+              </div>
+              <div class="w-full h-fit bg-slate-100 rounded-md -mt-[75px] px-4">
+                <div class="font-bold text-xl text-center">LOREM IPSUM</div>
+                <div class="text-sm w-full mt-1 text-center">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Facere, corporis vero enim, consequatur ex veniam consectetur
+                  architecto nihil ducimus, molestias deserunt fuga! Repellendus
+                  minus facere eveniet neque asperiores nam porro?
+                </div>
+                <div class="w-full my-2 text-center h-fit">
+                  <button
+                    class="px-6 py-2 hover:bg-gray-700 bg-gray-900 rounded-md font-bold text-white"
+                  >
+                    KNOW MORE
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-[85vw] h-full md:w-[20vw] box-border">
+            <div
+              class="w-[100%] box-border px-2 h-full mx-auto inline-flex md:mx-2 flex-col"
+            >
+              <div class="h-2/3 py-2 w-full">
+                <img
+                  src=" /assets/images/download.jpg"
+                  class="h-full w-full object-cover"
+                  alt=""
+                />
+              </div>
+              <div class="w-full h-fit bg-slate-100 rounded-md -mt-[75px] px-4">
+                <div class="font-bold text-xl text-center">LOREM IPSUM</div>
+                <div class="text-sm w-full mt-1 text-center">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Facere, corporis vero enim, consequatur ex veniam consectetur
+                  architecto nihil ducimus, molestias deserunt fuga! Repellendus
+                  minus facere eveniet neque asperiores nam porro?
+                </div>
+                <div class="w-full my-2 text-center h-fit">
+                  <button
+                    class="px-6 py-2 hover:bg-gray-700 bg-gray-900 rounded-md font-bold text-white"
+                  >
+                    KNOW MORE
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!--WORK SHOWCASE-->
+    <div id="work-showcase" class="w-screen min-h-fit bg-slate-900 text-white">
+      <div class="w-full h-fit mt-7 p-6 md:px-6 lg:px-72">
+        <!-- <div class="h-96 box-border lg:px-24 w-full">
+          <video
+            src="/assets/videos/background-video.mp4"
+            class="w-full h-full object-cover"
+            id="main-video"
+            loop
+            muted
+            video>
+        </div> -->
+        <div
+          class="grid h-fit grid-cols-2 md:grid-cols-2 lg:grid-cols-2 lg:px-24 overflow-y-hidden"
+        >
+          <div class="w-full box-border py-2 px-2 h-52">
+            <video
+              src="/assets/videos/background-video.mp4"
+              class="video w-full h-full object-cover"
+              type="video/mp4"
+              loop
+              muted
+              ></video>
+            ></video>
+          </div>
+          <div class="w-full box-border py-2 px-2 h-52">
+            <video
+              src="/assets/videos/background-video.mp4"
+              class="video w-full h-full object-cover"
+              type="video/mp4"
+              loop
+              muted
+            ></video>
+          </div>
+          <div class="w-full box-border py-2 px-2 h-52">
+            <video
+              src="/assets/videos/background-video.mp4"
+              class="video w-full h-full object-cover"
+              type="video/mp4"
+              loop
+              muted
+            ></video>
+          </div>
+          <div class="w-full box-border py-2 px-2 h-52">
+            <video
+              src="/assets/videos/background-video.mp4"
+              class="video w-full h-full object-cover"
+              type="video/mp4"
+              loop
+              muted
+            ></video>
+          </div>
+          <!-- <div class="w-full box-border py-2 px-2 h-52">
+            <video
+              src="/assets/videos/background-video.mp4"
+              class="video w-full h-full object-cover"
+              type="video/mp4"
+              loop
+              muted
+            ></video>
+          </div> -->
+        </div>
+        <div class="mt-10 mb-6">
+          <div class="text-3xl font-bold text-center uppercase">
+            What is an event without some good food?!
+          </div>
+          <div class="text-center font-bold text-2xl text-slate-400">
+            Get our best chefs from <span class="font-extrabold text-4xl px-4 text-white uppercase">Hell's Kitchen</span> to cook for your events
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--PHOTO BOOTH-->
+    <div class="w-screen px-2 mt-36 min-h-screen lg:px-72 box-border inline-flex flex-col overflow-x-hidden align-center">
+
+    <div class="w-full text-center text-6xl font-extrabold mb-14">
+      GALLERY
+    </div>
+    <div class="slider-container w-full px-4 box-border ">
+
+      <div class="slider-content">
+  
+          <div class="slider-single">
+              <img class="slider-single-image" src="https://picsum.photos/id/973/200/300" alt="1" />
+              <h1 class="slider-single-title">Through the Mountains</h1>
+              <a class="slider-single-likes" href="javascript:void(0);">
+                  <i class="fa fa-heart"></i>
+                  <p>1,247</p>
+              </a>
+          </div>
+  
+          <div class="slider-single">
+              <img class="slider-single-image" src="https://picsum.photos/id/974/200/300" alt="2" />
+              <h1 class="slider-single-title">Through the Mountains</h1>
+              <a class="slider-single-likes" href="javascript:void(0);">
+                  <i class="fa fa-heart"></i>
+                  <p>1,247</p>
+              </a>
+          </div>
+  
+          <div class="slider-single">
+              <img class="slider-single-image" src="https://picsum.photos/id/975/200/300" alt="3" />
+              <h1 class="slider-single-title">Through the Mountains</h1>
+              <a class="slider-single-likes" href="javascript:void(0);">
+                  <i class="fa fa-heart"></i>
+                  <p>1,247</p>
+              </a>
+          </div>
+  
+  
+          <div class="slider-single">
+              <img class="slider-single-image" src="https://picsum.photos/id/976/200/300" alt="4" />
+              <h1 class="slider-single-title">Through the Mountains</h1>
+              <a class="slider-single-likes" href="javascript:void(0);">
+                  <i class="fa fa-heart"></i>
+                  <p>1,247</p>
+              </a>
+          </div>
+  
+  
+          <div class="slider-single">
+              <img class="slider-single-image" src="https://picsum.photos/id/977/200/300" alt="5" />
+              <h1 class="slider-single-title">Through the Mountains</h1>
+              <a class="slider-single-likes" href="javascript:void(0);">
+                  <i class="fa fa-heart"></i>
+                  <p>1,247</p>
+              </a>
+          </div>
+  
+          <div class="slider-single">
+              <img class="slider-single-image" src="https://picsum.photos/id/978/200/300" alt="6" />
+              <h1 class="slider-single-title">Through the Mountains</h1>
+              <a class="slider-single-likes" href="javascript:void(0);">
+                  <i class="fa fa-heart"></i>
+                  <p>1,247</p>
+              </a>
+          </div>
+          <div class="slider-single">
+            <img class="slider-single-image" src="https://picsum.photos/id/978/200/300" alt="6" />
+            <h1 class="slider-single-title">Through the Mountains</h1>
+            <a class="slider-single-likes" href="javascript:void(0);">
+                <i class="fa fa-heart"></i>
+                <p>1,247</p>
+            </a>
+        </div>
+      </div>
+  </div>
+</div>
+    <!--QUERY-->
+    <div
+      id="query"
+      class="w-screen box-border h-96 lg:h-80 inline-flex justify-center flex-col bg-red-400 my-12"
+    >
+      <div>
+        <div class="text-center text-4xl font-bold">
+          Help us get back to you
+        </div>
+        <div
+          class="w-full flex flex-col lg:flex-row my-4 box-border lg:px-72 h-fit"
+        >
+          <div class="w-full lg:w-1/2 text-center h-fit pb-2 lg:py-4">
+            <input
+              type="text"
+              placeholder="Email I.D."
+              class="rounded-md h-8 lg:h-16 px-4 w-5/6"
+            />
+          </div>
+          <div class="w-full lg:w-1/2 text-center h-fit pt-2 lg:py-4">
+            <input
+              type="text"
+              placeholder="Phone Number"
+              class="rounded-md h-8 lg:h-16 px-4 w-5/6"
+            />
+          </div>
+        </div>
+        <div
+          class="w-full flex flex-col lg:flex-row mb-4 box-border lg:px-72 h-fit"
+        >
+          <div
+          id="ivendor" class="w-full lg:w-1/2 text-center text-2xl  border-b-2 lg:border-0  lg:border-r-2 rounded-md border-slate-500 cursor-pointer text-slate-700 font-bold bg-white py-2 "
+          >
+            I am Vendor
+          </div>
+          <div
+            class="w-full lg:w-1/2 text-center text-2xl border-t-2  lg:border-0 lg:border-l-2 rounded-md border-slate-500 cursor-pointer text-slate-700 font-bold bg-white py-2"
+          >
+            I am Customer
+          </div>
+        </div>
+        <div>
+          <div class="w-full h-12 text-center">
+            <button
+              class="bg-slate-900 hover:bg-slate-700 text-white w-5/6 lg:w-1/6 h-12 rounded-md font-bold"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--CONTACT-->
+    <div
+      id="contact"
+      class="w-screen h-[40vh] py-4 box-border md:px-72 bg-slate-900 "
+    >
+      <div id="contact-wrap" class="inline-flex flex-col h-full w-full">
+        <div class="max-w-full h-1/2 flex-col px-10 py-6">
+          <div class="text-center text-white font-extrabold text-xl">
+            Mail to:xyz@gmail.com
+          </div>
+          <div>
+            <input
+            id="rev"
+              type="text "
+              placeholder="Your message here ."
+              class="box-border p-2 w-full h-10 my-2 bg-gray-200 rounded-md"
+            />
+            <div class="inline-flex flex-col w-full justify-center lg:flex-row">
+              <div class="w-full 2 text-center h-fit pb-2 lg:py-4">
+                <input
+                id="callBack-email-2"
+                  type="text"
+                  placeholder="Email I.D."
+                  class="rounded-md h-8 lg:h-16 px-4 w-5/6"
+                />
+              </div>
+              <div class="w-full text-center h-fit pt-2 lg:py-4">
+                <input
+                id="callBack-phone-2"
+                  type="text"
+                  placeholder="Phone Number"
+                  class="rounded-md h-8 lg:h-16 px-4 w-5/6"
+                />
+              </div>
+            </div>
+          </div>
+          
+          <div class="w-full h-12 text-center">
+            
+            <input id="callback-submit-2" type="submit" class="bg-slate-200 hover:bg-slate-500 text-black w-5/6 lg:w-1/6 h-12 rounded-md font-bold" id="callBack-submit">
+          </div>
+          </div>
+        </div>
+        
+        <div class="text-center text-2xl text-white relative top-24">
+          <div class="w-full h-1/2 align-middle lg:mt-6 justify-center inline-flex">
+            <a href=""><i class="ri-instagram-line text-4xl px-2 text-white"></i></a>
+            <a href=""><i class="ri-facebook-line text-4xl px-2 text-white"></i></a>
+            <a href=""><i class="ri-youtube-line text-4xl px-2 text-white"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/index.js"></script>
+    <script src="../js/index-gallery.js"></script>
+  </body>
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/coming soon.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+</head>
+<body class="overflow-x-hidden">
+    <div
+    id="navigation"
+    class="fixed top-0 left-0 w-full h-fit z-50 box-border "
+  >
+    <div class="inline-flex justify-between md:justify-between w-full">
+      <div class="flex">
+        <a href="/">  
+        <div class="w-12 h-12 m-2">
+          <img
+            src=" images/logo.png"
+            class="rounded-full object-contain h-full w-full"
+            alt=""
+          />
+        </div>
+    </a>
+    <a href="/">
+        <div class="p-2 font-bold md:mr-[40] h-14 my-auto">
+          <img
+          class="drop-shadow-2xl h-full  object-cover"
+          src="images/name.png"
+          alt=""
+        />
+        </div>
+        </a>
+      </div>
+      <div id="toggle" class="p-2 flex flex-col  text-white justify-center md:hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-7 w-7"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <div
+        id="navbar"
+        class="invisible w-[60vw] fixed top-0 left-0 drop-shadow-2xl h-screen bg-[#E60965] z-50"
+      >
+        <div
+          class="w-full pt-4 box-border inline-flex flex-col justify-start p-4 h-fit"
+        >
+          <div><img src="images/logo.png" alt="" /></div>
+          <a href="/">
+          <div
+            id="event"class="nav-link py-2 border-b-[2px] hover:bg-gray-400 text-white rounded-md border-gray-300 pl-6 text-2xl"
+          >
+            Home
+          </div>
+        </a>
+        <a href="">
+          <div
+            id="vendor"class="nav-link py-2 border-b-[2px] hover:bg-gray-400 text-white rounded-md border-gray-300 pl-6 text-2xl"
+          >
+            Vendor
+          </div>
+        </a>
+        <a href="/#testimonial">
+          <div
+            class="nav-link py-2 border-b-[2px] hover:bg-gray-400 text-white rounded-md border-gray-300 pl-6 text-2xl"
+          >
+            Review
+          </div>
+        </a>
+        <a href="/coming-soon">
+          <div
+            class="nav-link py-2 border-b-[2px] hover:bg-gray-400 text-white rounded-md border-gray-300 pl-6 text-2xl"
+          >
+            Blog
+          </div>
+        </a>
+        <a href="/coming-soon">
+          <div
+            class="nav-link py-2 border-b-[2px] hover:bg-gray-400 text-white rounded-md border-gray-300 pl-6 text-2xl"
+          >
+            Shop
+          </div>
+        </a>
+        </div>
+      </div>
+      <div
+        class="invisible absolute right-[-100%] md:visible flex md:relative md:right-0 h-fit my-auto align-middle md:-left-2"
+      >
+      <a href="/">
+        <div
+          class=" nav-item h-full min-w-fit text-lg text-white hover:bg-red-200 rounded-md cursor-pointer  font-bold px-4 py-1 box-border md:text-xl md:px-4"
+        >
+          Home
+        </div>
+      </a>
+      <a href="">
+        <div
+          class=" nav-item h-full min-w-fit text-lg text-white hover:bg-red-200 rounded-md cursor-pointer  font-bold px-4 py-1 box-border md:text-xl md:px-4"
+        >
+          Vendors
+        </div>
+      </a>
+      <a href="/#testimonial">
+        <div
+          class=" nav-item h-full min-w-fit text-lg text-white hover:bg-red-200 rounded-md cursor-pointer  font-bold px-4 py-1 box-border md:text-xl md:px-4"
+        >
+          Reviews
+        </div>
+      </a>
+      <a href="/coming-soon">
+        <div
+          class=" nav-item h-full min-w-fit text-lg text-white hover:bg-red-200 rounded-md cursor-pointer  font-bold px-4 py-1 box-border md:text-xl md:px-4"
+        >
+          Blogs
+        </div>
+      </a>
+      <a href="/coming-soon">
+        <div
+          class=" nav-item h-full min-w-fit text-lg text-white hover:bg-red-200 rounded-md cursor-pointer  font-bold px-4 py-1 box-border md:text-xl md:px-4"
+        >Shop</div>
+      </a>
+      </div>
+    </div>
+  </div>
+    <div class="wrapper">
+        <div><h1 class="text-6xl Staatliches pb-1 font-bold lg:text-9xl">coming soon<span class="dot">.</span></h1></div>
+        <div><p class="Yesteryear text-3xl lg:text-6xl pt-1">Put some text here.</p></div>
+        <div class="icons pt-2 mt-4">
+          <a href=""><i class=" text-lg lg:text-2xl ri-facebook-circle-fill"></i></a>
+          <a href=""><i class=" text-lg lg:text-2xl ri-instagram-fill"></i></a>
+          <a href=""><i class=" text-lg lg:text-2xl ri-youtube-fill"></i></a>
+        </div>
+       </div>
+       <!--Query-->
+       <div id="query" class="w-screen h-fit my-6 px-6 lg:px-52 ">
+      <div class="w-full h-fit inline-flex justify-center flex-col md:flex-row ">
+        <div id="query-box" class="py-4 px-4 bg-[#E60965] w-full md:w-2/3">
+          <div class="rounded-md w-full box-border mx-auto  inline-flex  ">
+            <div id="vendor-button" class="cursor-pointer Staatliches font-bold px-4 py-2 -ml-[2px] text-lg lg:text-2xl w-full  border-2  border-white rounded-md text-white ">I'm a Vendor</div>
+            <div id="customer-button"class="cursor-pointer Staatliches font-bold px-4 py-2 text-lg lg:text-2xl  w-full border-2 bg-blue-400  text-white rounded-md ">I'm a Customer</div>
+          </div>
+          <div id="callback-options-vendor" class="w-full inline-grid mt-4  grid-cols-2">
+            
+          </div>
+          <div id="callback-options-customer" class="w-full hidden inline-grid mt-4 grid-cols-2">
+            
+          </div>
+          <div class="mt-2">
+            <div class="w-full  text-center h-fit mb-1 lg:py-1">
+            <input
+            id="callBack-email-1"
+              type="text"
+              placeholder="Email I.D."
+              class="rounded-md h-6 lg:h-12 px-4 w-5/6"
+            />
+          </div>
+            <div class="w-full  text-center h-fit  lg:py-1">
+            <input
+            id="callBack-phone-1"
+              type="text"
+              placeholder="Phone Number"
+              class="rounded-md h-6 lg:h-12 px-4 w-5/6"
+            />
+          </div>
+        </div>
+        <div class="mt-2">
+          <div class="w-full h-fit text-center">
+            
+            <input id="callback-submit-1" type="submit" class="bg-white cursor-pointer hover:border-2 border-white hover:text-white text-black w-fit h-fit box-border px-4 py-2 rounded-md font-bold hover:bg-slate-900" >
+          </div>
+        </div>
+      </div>
+        <div class="w-full md:pr-36 h-fit p-4 px-6 bg-white">
+          <div class=" inline-flex w-full h-fit flex-col justify-center ">
+            <div class="Staatliches text-8xl text-slate-500">Request <br><span class="text-8xl text-slate-300">Call-back</span></div>
+            <div class="Yesteryear text-2xl text-slate-700">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim cumque quia itaque, facilis explicabo rem mollitia, eaque tenetur expedita ut soluta amet odit ratione incidunt. Sint perferendis animi nam iste!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+       <!--CONTACT-->
+       <div class="w-full box-border h-fit px-6 lg:px-52">
+        <div class="w-full h-fit">
+          <div class="text-slate-700 font-bold text-lg">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+          </div>
+          <div class="text-slate-700 my-4 font-normal text-md">
+            <span>Plan your event with Us.</span>
+          </div>
+          <div class="text-slate-700 my-4 font-normal text-md">
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic possimus consectetur nisi, itaque 
+              ullam ut ipsum magnam consequuntur, nemo saepe cum reprehenderit quod quam, ab enim iusto modi architecto quos.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic possimus consectetur nisi, itaque 
+              ullam ut ipsum magnam consequuntur, nemo saepe cum reprehenderit quod quam, ab enim iusto modi architecto quos.</span>
+          </div>
+          <div class="my-4">
+            <div class="text-slate-700 font-normal text-md">Contact us to get best deals</div>
+            <div class="text-slate-700 font-normal text-md">loremipsum@gmail.com</div>
+            <div class="text-slate-700 font-normal text-md">9876-543-210</div>
+          </div>
+          <div class="inline-flex flex-col lg:flex-row justify-between px-2 lg:px-16 w-full ">
+          <div class="lg:w-1/2" ><div class="my-2 w-full">
+            <div class="text-md font-bold text-slate-700">Get Latest Updates</div>
+            <div class="inline-flex w-full">
+              <div class="text-md border-1 w-[70%] border-slate-700 text-slate-700 font-normal "><input type="text" id="callback-email-2" name="Email" class="p-4 w-full" placeholder="Email*" id=""> </div>
+              <div class="w-[30%]" ><input type="submit"  id="callback-submit-2" class="bg-[#E60965] cursor-pointer px-4 w-full h-full text-md font-medium text-white " value="Subscribe"></div>
+            </div>
+          </div>
+          <div class="my-4">
+            <div class="text-slate-700 font-medium text-lg">Submit your wedding</div>
+            <div class="inline-flex py-4 ">
+              <a href="#query"><div class="mx-2 Staatliches p-4 text-md lg:text-2xl  border-2 border-[#E60965] rounded-sm cursor-pointer hover:bg-[#E60965] hover:text-white">Submit Event</div></a>
+              <a href="#query"><div class="mx-2 Staatliches p-4 text-md lg:text-2xl  border-2 border-blue-400 rounded-sm cursor-pointer hover:bg-blue-400 hover:text-white">Register as a Vendor</div></a>
+            </div>
+          </div></div>
+  
+          <div class="lg:pl-24">
+            <div class="text-lg p-2 font-medium Staatliches text-slate-700">Follow us on:</div>
+            <div class="inline-grid w-full grid-cols-2">
+              <div class="w-fit min-w-full box-border h-fit p-2 "><span class=" box-border pr-2 h-fit"><img src="/images/mycollection-2/png/001-facebook.png" alt="" class="inline-block" srcset=""></span><span class="pl-2 text-md -mt-2 lg:text-lg font-medium text-slate-700">Facebook</span></div>
+              <div class="w-fit min-w-full box-border h-fit p-2 "><span class=" box-border pr-2 h-fit"><img src="/images/mycollection-2/png/002-instagram.png" alt="" class="inline-block" srcset=""></span><span class="pl-2 text-md -mt-2 lg:text-lg font-medium text-slate-700">Instagram</span></div>
+              <div class="w-fit min-w-full box-border h-fit p-2 "><span class=" box-border pr-2 h-fit"><img src="/images/mycollection-2/png/003-snapchat.png" alt="" class="inline-block" srcset=""></span><span class="pl-2 text-md -mt-2 lg:text-lg font-medium text-slate-700">Snapchat</span></div>
+              <div class="w-fit min-w-full box-border h-fit p-2 "><span class=" box-border pr-2 h-fit"><img src="/images/mycollection-2/png/004-youtube.png" alt="" class="inline-block" srcset=""></span><span class="pl-2 text-md -mt-2 lg:text-lg font-medium text-slate-700">Youtube</span></div>
+              <div class="w-fit min-w-full box-border h-fit p-2 "><span class=" box-border pr-2 h-fit"><img src="/images/mycollection-2/png/006-twitter.png" alt="" class="inline-block" srcset=""></span><span class="pl-2 text-md -mt-2 lg:text-lg font-medium text-slate-700">Twitter</span></div>
+              <div class="w-fit min-w-full box-border h-fit p-2 "><span class=" box-border pr-2 h-fit"><img src="/images/mycollection-2/png/005-pinterest.png" alt="" class="inline-block" srcset=""></span><span class="pl-2 text-md -mt-2 lg:text-lg font-medium text-slate-700">Pinterest</span></div>
+          </div>
+        </div>
+      </div>
+          
+        </div>
+  
+      </div>
+      <hr class="text-slate-700 mt-9 h-[15px] w-[85vw] mx-auto">
+      <!--QUICK ACTION-->
+      <div class="w-screen mt-9 p-2 mb-9 px-2 box-border lg:px-52   h-fit">
+        <div class="w-full h-fit">
+          <div class="inline-grid w-full box-border lg:px-24 grid-cols-1 lg:grid-cols-4">
+            <div class="w-full border-b-2 border-slate-700  inline-flex h-fit flex-col lg:border-0">
+              <div class="quick w-full h-fit text-slate-700 text-md Staatliches inline-flex justify-between font-bold" >
+                <span class="py-2">Lorem Ipsum</span>
+                <span>
+                  <i class="lg:hidden ri-arrow-down-s-fill"></i>
+                </span>
+              </div>
+              <div class="quick-sibling hidden lg:inline w-full h-fit">
+                <ul class="list-none text-slate-700 font-medium px-2 text-sm">
+                  <li>Lorem</li>
+                  <li>Ipsum</li>
+                  <li>Dolor</li>
+                  <li>Set</li>
+                  <li>Amet</li>
+                  <li>Lorem Ipsum</li>
+                  <li>Dolor</li>
+                  <li>Set</li>
+                </ul>
+              </div>
+            </div>
+            <div class=" w-full border-b-2 border-slate-700  inline-flex h-fit flex-col lg:border-0">
+              <div class="quick w-full h-fit text-slate-700 text-md Staatliches inline-flex justify-between font-bold" >
+                <span class="py-2">Lorem Ipsum</span>
+                <span>
+                  <i class="lg:hidden ri-arrow-down-s-fill"></i>
+                </span>
+              </div>
+              <div class="quick-sibling hidden lg:inline w-full h-fit">
+                <ul class="list-none text-slate-700 font-medium px-2 text-sm">
+                  <li>Lorem</li>
+                  <li>Ipsum</li>
+                  <li>Dolor</li>
+                  <li>Set</li>
+                  <li>Amet</li>
+                  <li>Lorem Ipsum</li>
+                  <li>Dolor</li>
+                  <li>Set</li>
+                </ul>
+              </div>
+            </div>
+            <div class=" w-full border-b-2 border-slate-700  inline-flex h-fit flex-col lg:border-0">
+              <div class="quick w-full h-fit text-slate-700 text-md Staatliches inline-flex justify-between font-bold" >
+                <span class="py-2">Lorem Ipsum</span>
+                <span>
+                  <i class="lg:hidden ri-arrow-down-s-fill"></i>
+                </span>
+              </div>
+              <div class="quick-sibling hidden lg:inline w-full h-fit">
+                <ul class="list-none text-slate-700 font-medium px-2  text-sm">
+                  <li>Lorem</li>
+                  <li>Ipsum</li>
+                  <li>Dolor</li>
+                  <li>Set</li>
+                  <li>Amet</li>
+                  <li>Lorem Ipsum</li>
+                  <li>Dolor</li>
+                  <li>Set</li>
+                </ul>
+              </div>
+            </div>
+            <div class=" w-full border-b-2 border-slate-700  inline-flex h-fit flex-col lg:border-0">
+              <div class=" quick w-full h-fit text-slate-700 text-md Staatliches inline-flex justify-between font-bold" >
+                <span class="py-2">Lorem Ipsum</span>
+                <span>
+                  <i class="lg:hidden ri-arrow-down-s-fill"></i>
+                </span>
+              </div>
+              <div class="quick-sibling hidden lg:inline w-full h-fit">
+                <ul class="list-none text-slate-700 font-medium px-2  text-sm">
+                  <li>Lorem</li>
+                  <li>Ipsum</li>
+                  <li>Dolor</li>
+                  <li>Set</li>
+                  <li>Amet</li>
+                  <li>Lorem Ipsum</li>
+                  <li>Dolor</li>
+                  <li>Set</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  
+  
+  
+      <div class="px-6 lg:px-52 box-border bg-[#E60965] py-4 w-screen h-fit">
+        <div class="w-full h-fit text-center">
+          <span><i class=" text-white text-lg ri-copyright-fill"></i></span>
+          <span class="text-slate-200 text-sm font-normal">Copyright by <span class="text-white Staatliches text-lg font-medium">EVENT SUCCEED</span></span>
+        </div>
+      </div>
+      <script src="/js/common.js"></script>
+       
+</body>
+</html>
