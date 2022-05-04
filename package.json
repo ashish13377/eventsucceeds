@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "react-scripts build"
     "build": "set TAILWIND_MODE=WATCH&postcss ./src/styles.css -o ./public/css/styles.css --watch --verbose",
     "build:css": "postcss ./src/styles.css -o ./public/css/styles.css ",
     "start": "npm run build:css && node app  "
